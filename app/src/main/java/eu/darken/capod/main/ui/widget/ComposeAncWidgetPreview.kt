@@ -40,7 +40,7 @@ private fun ActiveAncPreview(
 ) {
     Column(
         modifier = modifier
-            .clip(RoundedCornerShape(16.dp))
+            .clip(RoundedCornerShape(WidgetTheme.clampCornerRadius(state.theme.cornerRadius).dp))
             .background(Color(state.resolvedBgColor))
             .padding(horizontal = 12.dp, vertical = 8.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -117,7 +117,7 @@ private fun MessageAncPreview(
 ) {
     Column(
         modifier = modifier
-            .clip(RoundedCornerShape(16.dp))
+            .clip(RoundedCornerShape(WidgetTheme.clampCornerRadius(state.theme.cornerRadius).dp))
             .background(Color(state.resolvedBgColor))
             .padding(12.dp),
         horizontalAlignment = Alignment.CenterHorizontally,

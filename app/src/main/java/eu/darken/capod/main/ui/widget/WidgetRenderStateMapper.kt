@@ -111,12 +111,8 @@ object WidgetRenderStateMapper {
 
     @ColorInt
     fun resolvedBgColor(context: Context, theme: WidgetTheme): Int {
-        val bgColor = theme.backgroundColor
-        return if (bgColor != null) {
-            WidgetTheme.applyAlpha(bgColor, theme.backgroundAlpha)
-        } else {
-            resolveThemeColor(context, android.R.attr.colorBackground)
-        }
+        val bgColor = theme.backgroundColor ?: resolveThemeColor(context, android.R.attr.colorBackground)
+        return WidgetTheme.applyAlpha(bgColor, theme.backgroundAlpha)
     }
 
     @ColorInt

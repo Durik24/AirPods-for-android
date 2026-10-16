@@ -12,6 +12,13 @@ data class WidgetTheme(
     @ColorInt val foregroundColor: Int? = null,
     val backgroundAlpha: Int = 255,
     val showDeviceLabel: Boolean = true,
+    val cornerRadius: Int = DEFAULT_CORNER_RADIUS,
+    val layoutStyle: LayoutStyle = LayoutStyle.AUTO,
+    val contentSize: ContentSize = ContentSize.AUTO,
+    val showCase: Boolean = true,
+    val showEstimates: Boolean = true,
+    val showStatusIcons: Boolean = true,
+    val showBatteryBars: Boolean = false,
 ) {
 
     enum class Preset(
@@ -21,12 +28,36 @@ data class WidgetTheme(
         MATERIAL_YOU(null, null),
         CLASSIC_DARK(0xFF1E1E1E.toInt(), 0xFFFFFFFF.toInt()),
         CLASSIC_LIGHT(0xFFFFFFFF.toInt(), 0xFF1E1E1E.toInt()),
+        MIDNIGHT(0xFF0F172A.toInt(), 0xFFE2E8F0.toInt()),
         BLUE(0xFF1565C0.toInt(), 0xFFFFFFFF.toInt()),
+        TEAL(0xFF00695C.toInt(), 0xFFFFFFFF.toInt()),
         GREEN(0xFF2E7D32.toInt(), 0xFFFFFFFF.toInt()),
+        PURPLE(0xFF5E35B1.toInt(), 0xFFFFFFFF.toInt()),
+        SUNSET(0xFFE65100.toInt(), 0xFFFFFFFF.toInt()),
         RED(0xFFC62828.toInt(), 0xFFFFFFFF.toInt()),
     }
 
+    /** How the pods are arranged. [AUTO] picks a row or a column from the widget's current size. */
+    @Serializable
+    enum class LayoutStyle {
+        AUTO,
+        HORIZONTAL,
+        VERTICAL,
+    }
+
+    /** Size of icons and text. [AUTO] grows the content with the widget when it is resized. */
+    @Serializable
+    enum class ContentSize(val fixedScale: Float?) {
+        AUTO(null),
+        SMALL(0.85f),
+        MEDIUM(1.0f),
+        LARGE(1.3f),
+    }
+
     companion object {
+        const val DEFAULT_CORNER_RADIUS = 20
+        const val MAX_CORNER_RADIUS = 32
+
         private const val KEY_THEME_MODE = "capod_theme_mode"
         private const val KEY_CUSTOM_BG = "capod_custom_bg"
         private const val KEY_CUSTOM_FG = "capod_custom_fg"
@@ -37,6 +68,8 @@ data class WidgetTheme(
         private const val MODE_CUSTOM = "custom"
 
         val DEFAULT = WidgetTheme()
+
+        fun clampCornerRadius(radius: Int): Int = radius.coerceIn(0, MAX_CORNER_RADIUS)
 
         /**
          * Reads a [WidgetTheme] from the legacy `AppWidgetManager.getAppWidgetOptions()` Bundle.

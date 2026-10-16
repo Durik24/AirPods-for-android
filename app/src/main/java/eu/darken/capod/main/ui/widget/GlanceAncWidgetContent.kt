@@ -65,7 +65,7 @@ private fun GlanceAncActive(
             && state.layout != AncLayout.COLUMN_ICONS
             && state.layout != AncLayout.QUAD_CORNERS
 
-    AncWidgetRoot(state.resolvedBgColor) {
+    AncWidgetRoot(state.resolvedBgColor, state.theme.cornerRadius) {
         when (state.layout) {
             AncLayout.GRID_2X2 -> AncGrid(state.modes, iconColor, state.resolvedIconColor, state.resolvedActiveColor, state.resolvedOnActiveColor, appWidgetId)
             AncLayout.ROW -> AncRow(state.modes, iconColor, textColor, state.resolvedIconColor, state.resolvedActiveColor, state.resolvedOnActiveColor, appWidgetId)
@@ -490,7 +490,7 @@ private fun GlanceAncMessage(
         textAlign = TextAlign.Center,
     )
 
-    AncWidgetRoot(state.resolvedBgColor, clickModifier) {
+    AncWidgetRoot(state.resolvedBgColor, state.theme.cornerRadius, clickModifier) {
         Text(
             text = state.primaryText,
             style = textStyle,
@@ -514,6 +514,7 @@ private fun GlanceAncMessage(
 @Composable
 private fun AncWidgetRoot(
     bgColor: Int,
+    cornerRadius: Int,
     extraModifier: GlanceModifier = GlanceModifier,
     content: @Composable () -> Unit,
 ) {
@@ -521,7 +522,7 @@ private fun AncWidgetRoot(
         modifier = extraModifier
             .fillMaxSize()
             .background(fixedAncColor(bgColor))
-            .cornerRadius(16.dp)
+            .cornerRadius(WidgetTheme.clampCornerRadius(cornerRadius).dp)
             .padding(horizontal = 8.dp, vertical = 4.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalAlignment = Alignment.CenterVertically,

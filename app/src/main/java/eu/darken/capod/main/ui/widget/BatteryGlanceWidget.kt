@@ -60,7 +60,7 @@ class BatteryGlanceWidget : GlanceAppWidget() {
         } catch (e: Exception) {
             log(TAG, ERROR) { "provideGlance setup failed: ${e.asLog()}" }
             provideContent {
-                val layout = BatteryLayout.forCells(getCellsForSize(LocalSize.current.width.value.toInt()))
+                val layout = BatteryLayout.forCells(BatteryLayout.cellsForWidth(LocalSize.current.width.value))
                 GlanceWidgetContent(
                     state = WidgetRenderState.Message(
                         theme = WidgetTheme.DEFAULT,
@@ -77,8 +77,7 @@ class BatteryGlanceWidget : GlanceAppWidget() {
         }
 
         provideContent {
-            val widthDp = LocalSize.current.width
-            val layout = BatteryLayout.forCells(getCellsForSize(widthDp.value.toInt()))
+            val size = LocalSize.current
 
             val inputs = rememberWidgetInputs(
                 configFlow = remember { ep.widgetSettings().widgetConfigFlow(appWidgetId) },
@@ -120,6 +119,12 @@ class BatteryGlanceWidget : GlanceAppWidget() {
                 val device = inputs.device
 
                 log(TAG, VERBOSE) { "render(appWidgetId=$appWidgetId, deviceKey=${device?.toWidgetKey()})" }
+                val layout = BatteryLayout.forSize(
+                    widthDp = size.width.value,
+                    heightDp = size.height.value,
+                    theme = config.theme,
+                    isDualPod = device?.hasDualPods ?: true,
+                )
 
                 WidgetRenderStateMapper.map(
                     context = context,
@@ -137,7 +142,7 @@ class BatteryGlanceWidget : GlanceAppWidget() {
                     resolvedBgColor = WidgetRenderStateMapper.resolvedBgColor(context, WidgetTheme.DEFAULT),
                     resolvedTextColor = WidgetRenderStateMapper.resolvedTextColor(context, WidgetTheme.DEFAULT),
                     resolvedIconColor = WidgetRenderStateMapper.resolvedIconColor(context, WidgetTheme.DEFAULT),
-                    layout = layout,
+                    layout = BatteryLayout.forCells(BatteryLayout.cellsForWidth(size.width.value)),
                     primaryText = context.getString(eu.darken.capod.R.string.widget_error_loading_label),
                 )
             }
@@ -156,18 +161,6 @@ class BatteryGlanceWidget : GlanceAppWidget() {
         provideContent {
             GlanceWidgetContent(state = previewState, context = context)
         }
-    }
-
-    /**
-     * Returns number of cells needed for given size of the widget.
-     * https://developer.android.com/guide/practices/ui_guidelines/widget_design
-     */
-    private fun getCellsForSize(size: Int): Int {
-        var n = 2
-        while (70 * n - 30 <= size) {
-            ++n
-        }
-        return n - 1
     }
 
     companion object {

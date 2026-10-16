@@ -43,6 +43,7 @@ import androidx.compose.material.icons.twotone.Tune
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.Icon
@@ -51,6 +52,9 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedCard
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
+import androidx.compose.material3.SegmentedButton
+import androidx.compose.material3.SegmentedButtonDefaults
+import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
@@ -92,6 +96,7 @@ fun WidgetConfigurationScreen(
     onSetForegroundColor: (Int) -> Unit,
     onSetBackgroundAlpha: (Int) -> Unit,
     onSetShowDeviceLabel: (Boolean) -> Unit,
+    onUpdateOptions: ((WidgetTheme) -> WidgetTheme) -> Unit,
     onReset: () -> Unit,
     onConfirm: () -> Unit,
     onCancel: () -> Unit,
@@ -148,7 +153,7 @@ fun WidgetConfigurationScreen(
                 colors = CardDefaults.cardColors(
                     containerColor = MaterialTheme.colorScheme.surfaceContainerLow,
                 ),
-                shape = RoundedCornerShape(16.dp),
+                shape = RoundedCornerShape(24.dp),
             ) {
                 Column(modifier = Modifier.padding(cardPad)) {
                     Text(
@@ -177,6 +182,58 @@ fun WidgetConfigurationScreen(
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            // Live preview
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = screenHPad),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceContainerLow,
+                ),
+                shape = RoundedCornerShape(24.dp),
+            ) {
+                Column(modifier = Modifier.padding(cardPad)) {
+                    WidgetConfigPreview(
+                        theme = state.theme,
+                        deviceLabel = state.profiles.firstOrNull { it.id == state.selectedProfile }?.label,
+                        isAncWidget = state.isAncWidget,
+                    )
+
+                    Text(
+                        text = stringResource(R.string.widget_config_preview_resize_hint),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(top = 8.dp),
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Card — Layout & content
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = screenHPad),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.surfaceContainerLow,
+                ),
+                shape = RoundedCornerShape(24.dp),
+            ) {
+                WidgetLayoutOptions(
+                    theme = state.theme,
+                    isAncWidget = state.isAncWidget,
+                    onSetShowDeviceLabel = onSetShowDeviceLabel,
+                    onUpdateOptions = onUpdateOptions,
+                    modifier = Modifier.padding(cardPad),
+                )
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
             // Card B — Appearance
             Card(
                 modifier = Modifier
@@ -185,7 +242,7 @@ fun WidgetConfigurationScreen(
                 colors = CardDefaults.cardColors(
                     containerColor = MaterialTheme.colorScheme.surfaceContainerLow,
                 ),
-                shape = RoundedCornerShape(16.dp),
+                shape = RoundedCornerShape(24.dp),
             ) {
                 Column(modifier = Modifier.padding(cardPad)) {
                     // Appearance header + reset
@@ -202,39 +259,19 @@ fun WidgetConfigurationScreen(
                         }
                     }
 
-                    Spacer(modifier = Modifier.height(12.dp))
-
-                    // Live preview
-                    WidgetConfigPreview(
-                        theme = state.theme,
-                        deviceLabel = state.profiles.firstOrNull { it.id == state.selectedProfile }?.label,
-                        isAncWidget = state.isAncWidget,
-                    )
-
-                    Text(
-                        text = stringResource(R.string.widget_config_preview_resize_hint),
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        textAlign = androidx.compose.ui.text.style.TextAlign.Center,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(top = 8.dp),
-                    )
-
-                    Spacer(modifier = Modifier.height(16.dp))
+                    Spacer(modifier = Modifier.height(8.dp))
 
                     // Transparency slider
-                    val hasCustomBg = state.theme.backgroundColor != null
                     val transparencyPercent = ((255 - state.theme.backgroundAlpha) / 255f * 100f)
                     val displayPercent = (transparencyPercent / 5f).toInt() * 5
 
                     Text(
                         text = buildString {
                             append(stringResource(R.string.widget_config_transparency_label))
-                            if (hasCustomBg && displayPercent > 0) append(" ($displayPercent%)")
+                            if (displayPercent > 0) append(" ($displayPercent%)")
                         },
                         style = MaterialTheme.typography.labelLarge,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = if (hasCustomBg) 1f else 0.5f),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
 
                     Slider(
@@ -245,28 +282,9 @@ fun WidgetConfigurationScreen(
                         },
                         valueRange = 0f..100f,
                         steps = 19,
-                        enabled = hasCustomBg,
                     )
 
-                    // Show device label switch
-                    Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .height(48.dp),
-                        verticalAlignment = Alignment.CenterVertically,
-                    ) {
-                        Text(
-                            text = stringResource(R.string.widget_config_show_device_label),
-                            style = MaterialTheme.typography.bodyLarge,
-                            modifier = Modifier.weight(1f),
-                        )
-                        Switch(
-                            checked = state.theme.showDeviceLabel,
-                            onCheckedChange = onSetShowDeviceLabel,
-                        )
-                    }
-
-                    Spacer(modifier = Modifier.height(16.dp))
+                    Spacer(modifier = Modifier.height(8.dp))
 
                     // Preset chips
                     Text(
@@ -388,6 +406,150 @@ fun WidgetConfigurationScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun WidgetLayoutOptions(
+    theme: WidgetTheme,
+    isAncWidget: Boolean,
+    onSetShowDeviceLabel: (Boolean) -> Unit,
+    onUpdateOptions: ((WidgetTheme) -> WidgetTheme) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    Column(modifier = modifier) {
+        Text(
+            text = stringResource(R.string.widget_config_layout_section_label),
+            style = MaterialTheme.typography.titleLarge,
+        )
+
+        if (!isAncWidget) {
+            Spacer(modifier = Modifier.height(16.dp))
+            OptionLabel(stringResource(R.string.widget_config_layout_label))
+            val layoutOptions = listOf(
+                WidgetTheme.LayoutStyle.AUTO to stringResource(R.string.widget_config_layout_auto),
+                WidgetTheme.LayoutStyle.HORIZONTAL to stringResource(R.string.widget_config_layout_horizontal),
+                WidgetTheme.LayoutStyle.VERTICAL to stringResource(R.string.widget_config_layout_vertical),
+            )
+            SingleChoiceSegmentedButtonRow(modifier = Modifier.fillMaxWidth()) {
+                layoutOptions.forEachIndexed { index, (style, label) ->
+                    SegmentedButton(
+                        selected = theme.layoutStyle == style,
+                        onClick = { onUpdateOptions { it.copy(layoutStyle = style) } },
+                        shape = SegmentedButtonDefaults.itemShape(index = index, count = layoutOptions.size),
+                        label = { Text(label) },
+                    )
+                }
+            }
+            if (theme.layoutStyle == WidgetTheme.LayoutStyle.AUTO) {
+                OptionHint(stringResource(R.string.widget_config_layout_auto_hint))
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+            OptionLabel(stringResource(R.string.widget_config_size_label))
+            val sizeOptions = listOf(
+                WidgetTheme.ContentSize.AUTO to stringResource(R.string.widget_config_size_auto),
+                WidgetTheme.ContentSize.SMALL to stringResource(R.string.widget_config_size_small),
+                WidgetTheme.ContentSize.MEDIUM to stringResource(R.string.widget_config_size_medium),
+                WidgetTheme.ContentSize.LARGE to stringResource(R.string.widget_config_size_large),
+            )
+            SingleChoiceSegmentedButtonRow(modifier = Modifier.fillMaxWidth()) {
+                sizeOptions.forEachIndexed { index, (size, label) ->
+                    SegmentedButton(
+                        selected = theme.contentSize == size,
+                        onClick = { onUpdateOptions { it.copy(contentSize = size) } },
+                        shape = SegmentedButtonDefaults.itemShape(index = index, count = sizeOptions.size),
+                        label = { Text(label) },
+                    )
+                }
+            }
+            if (theme.contentSize == WidgetTheme.ContentSize.AUTO) {
+                OptionHint(stringResource(R.string.widget_config_size_auto_hint))
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+        OptionLabel("${stringResource(R.string.widget_config_corner_radius_label)} (${theme.cornerRadius} dp)")
+        Slider(
+            value = theme.cornerRadius.toFloat(),
+            onValueChange = { value -> onUpdateOptions { it.copy(cornerRadius = value.toInt()) } },
+            valueRange = 0f..WidgetTheme.MAX_CORNER_RADIUS.toFloat(),
+            steps = WidgetTheme.MAX_CORNER_RADIUS / 4 - 1,
+        )
+
+        OptionSwitch(
+            label = stringResource(R.string.widget_config_show_device_label),
+            checked = theme.showDeviceLabel,
+            onCheckedChange = onSetShowDeviceLabel,
+        )
+        if (!isAncWidget) {
+            OptionSwitch(
+                label = stringResource(R.string.widget_config_show_case),
+                checked = theme.showCase,
+                onCheckedChange = { show -> onUpdateOptions { it.copy(showCase = show) } },
+            )
+            OptionSwitch(
+                label = stringResource(R.string.widget_config_show_estimates),
+                checked = theme.showEstimates,
+                onCheckedChange = { show -> onUpdateOptions { it.copy(showEstimates = show) } },
+            )
+            OptionSwitch(
+                label = stringResource(R.string.widget_config_show_status_icons),
+                checked = theme.showStatusIcons,
+                onCheckedChange = { show -> onUpdateOptions { it.copy(showStatusIcons = show) } },
+            )
+            OptionSwitch(
+                label = stringResource(R.string.widget_config_show_battery_bars),
+                checked = theme.showBatteryBars,
+                onCheckedChange = { show -> onUpdateOptions { it.copy(showBatteryBars = show) } },
+            )
+        }
+    }
+}
+
+@Composable
+private fun OptionLabel(text: String) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.labelLarge,
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+        modifier = Modifier.padding(bottom = 8.dp),
+    )
+}
+
+@Composable
+private fun OptionHint(text: String) {
+    Text(
+        text = text,
+        style = MaterialTheme.typography.bodySmall,
+        color = MaterialTheme.colorScheme.onSurfaceVariant,
+        modifier = Modifier.padding(top = 6.dp),
+    )
+}
+
+@Composable
+private fun OptionSwitch(
+    label: String,
+    checked: Boolean,
+    onCheckedChange: (Boolean) -> Unit,
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clickable { onCheckedChange(!checked) }
+            .height(52.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Text(
+            text = label,
+            style = MaterialTheme.typography.bodyLarge,
+            modifier = Modifier.weight(1f),
+        )
+        Switch(
+            checked = checked,
+            onCheckedChange = onCheckedChange,
+        )
+    }
+}
+
 @Composable
 private fun ProfileSelectionItem(
     profile: DeviceProfile,
@@ -505,6 +667,11 @@ private fun WidgetConfigPreview(
                     val batteryState = remember(theme, deviceLabel) {
                         WidgetRenderState.previewDualPod(
                             theme = theme,
+                            layout = if (theme.layoutStyle == WidgetTheme.LayoutStyle.HORIZONTAL) {
+                                BatteryLayout.WIDE
+                            } else {
+                                BatteryLayout.NARROW
+                            },
                             bgColor = WidgetRenderStateMapper.resolvedBgColor(context, theme),
                             textColor = WidgetRenderStateMapper.resolvedTextColor(context, theme),
                             iconColor = WidgetRenderStateMapper.resolvedIconColor(context, theme),
@@ -542,6 +709,10 @@ private fun PresetChips(
         WidgetTheme.Preset.BLUE to stringResource(R.string.widget_config_preset_blue),
         WidgetTheme.Preset.GREEN to stringResource(R.string.widget_config_preset_green),
         WidgetTheme.Preset.RED to stringResource(R.string.widget_config_preset_red),
+        WidgetTheme.Preset.MIDNIGHT to stringResource(R.string.widget_config_preset_midnight),
+        WidgetTheme.Preset.TEAL to stringResource(R.string.widget_config_preset_teal),
+        WidgetTheme.Preset.PURPLE to stringResource(R.string.widget_config_preset_purple),
+        WidgetTheme.Preset.SUNSET to stringResource(R.string.widget_config_preset_sunset),
     )
 
     FlowRow(
@@ -761,6 +932,7 @@ private fun WidgetConfigurationScreenPreview() = PreviewWrapper {
         onSetForegroundColor = {},
         onSetBackgroundAlpha = {},
         onSetShowDeviceLabel = {},
+        onUpdateOptions = {},
         onReset = {},
         onConfirm = {},
         onCancel = {},
@@ -794,6 +966,7 @@ private fun WidgetConfigurationScreenCustomPreview() = PreviewWrapper {
         onSetForegroundColor = {},
         onSetBackgroundAlpha = {},
         onSetShowDeviceLabel = {},
+        onUpdateOptions = {},
         onReset = {},
         onConfirm = {},
         onCancel = {},
@@ -822,6 +995,7 @@ private fun WidgetConfigurationScreenNonProPreview() = PreviewWrapper {
         onSetForegroundColor = {},
         onSetBackgroundAlpha = {},
         onSetShowDeviceLabel = {},
+        onUpdateOptions = {},
         onReset = {},
         onConfirm = {},
         onCancel = {},

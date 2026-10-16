@@ -111,6 +111,7 @@ class WidgetConfigurationActivity : Activity2() {
                         onSetForegroundColor = { color -> vm.setForegroundColor(color) },
                         onSetBackgroundAlpha = { alpha -> vm.setBackgroundAlpha(alpha) },
                         onSetShowDeviceLabel = { show -> vm.setShowDeviceLabel(show) },
+                        onUpdateOptions = { transform -> vm.updateOptions(transform) },
                         onReset = { vm.resetToDefaults() },
                         onConfirm = {
                             // The decision is made in the ViewModel (suspending entitlement gate),

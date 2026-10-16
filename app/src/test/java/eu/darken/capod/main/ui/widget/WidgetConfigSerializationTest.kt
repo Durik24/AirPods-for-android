@@ -61,6 +61,39 @@ class WidgetConfigSerializationTest : BaseTest() {
     }
 
     @Test
+    fun `layout options round-trip`() {
+        val original = WidgetConfig(
+            profileId = "profile-layout",
+            theme = WidgetTheme(
+                cornerRadius = 8,
+                layoutStyle = WidgetTheme.LayoutStyle.HORIZONTAL,
+                contentSize = WidgetTheme.ContentSize.LARGE,
+                showCase = false,
+                showEstimates = false,
+                showStatusIcons = false,
+                showBatteryBars = true,
+            ),
+        )
+        val encoded = json.encodeToString(WidgetConfig.serializer(), original)
+        val decoded = json.decodeFromString(WidgetConfig.serializer(), encoded)
+
+        decoded shouldBe original
+    }
+
+    @Test
+    fun `configs saved before layout options get the defaults`() {
+        val legacyJson = """{"profileId":"p1","theme":{"backgroundAlpha":200,"showDeviceLabel":false}}"""
+
+        val decoded = json.decodeFromString(WidgetConfig.serializer(), legacyJson)
+
+        decoded.theme.cornerRadius shouldBe WidgetTheme.DEFAULT_CORNER_RADIUS
+        decoded.theme.layoutStyle shouldBe WidgetTheme.LayoutStyle.AUTO
+        decoded.theme.contentSize shouldBe WidgetTheme.ContentSize.AUTO
+        decoded.theme.showCase shouldBe true
+        decoded.theme.showBatteryBars shouldBe false
+    }
+
+    @Test
     fun `unknown future fields are ignored`() {
         val futureJson = """
             {

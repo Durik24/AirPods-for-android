@@ -115,8 +115,8 @@ class AncGlanceWidget : GlanceAppWidget() {
 
                 log(TAG, VERBOSE) { "render(appWidgetId=$appWidgetId, deviceKey=${device?.toWidgetKey()})" }
 
-                val widthCells = getCellsForSize(widthDp.value.toInt())
-                val heightCells = getCellsForSize(heightDp.value.toInt())
+                val widthCells = BatteryLayout.cellsForWidth(widthDp.value)
+                val heightCells = BatteryLayout.cellsForWidth(heightDp.value)
                 val layout = when {
                     widthCells <= 1 && heightCells <= 1 -> AncLayout.QUAD_CORNERS
                     heightCells <= 1 -> AncLayout.ROW_ICONS
@@ -174,14 +174,6 @@ class AncGlanceWidget : GlanceAppWidget() {
         } catch (_: Exception) {
             AppWidgetManager.INVALID_APPWIDGET_ID
         }
-    }
-
-    private fun getCellsForSize(size: Int): Int {
-        var n = 2
-        while (70 * n - 30 <= size) {
-            ++n
-        }
-        return n - 1
     }
 
     companion object {

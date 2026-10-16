@@ -6,6 +6,7 @@ import androidx.annotation.DrawableRes
 import eu.darken.capod.R
 import eu.darken.capod.pods.core.apple.ble.formatBatteryDurationShort
 import kotlin.math.max
+import kotlin.math.min
 
 enum class BatteryLayout {
     TINY_COLUMN,
@@ -18,8 +19,105 @@ enum class BatteryLayout {
             widthCells >= 5 -> WIDE
             else -> NARROW
         }
+
+        /**
+         * Picks the layout for the widget's current size. In [WidgetTheme.LayoutStyle.AUTO] the row or
+         * column is chosen by whichever lets the content grow the most, so a short wide widget gets a row
+         * and a tall one a column instead of clipping.
+         */
+        fun forSize(
+            widthDp: Float,
+            heightDp: Float,
+            theme: WidgetTheme,
+            isDualPod: Boolean,
+        ): BatteryLayout {
+            if (forCells(cellsForWidth(widthDp)) == TINY_COLUMN) return TINY_COLUMN
+            return when (theme.layoutStyle) {
+                WidgetTheme.LayoutStyle.HORIZONTAL -> WIDE
+                WidgetTheme.LayoutStyle.VERTICAL -> NARROW
+                WidgetTheme.LayoutStyle.AUTO -> {
+                    val wideFit = fitScale(WIDE, isDualPod, theme, widthDp, heightDp)
+                    val narrowFit = fitScale(NARROW, isDualPod, theme, widthDp, heightDp)
+                    // A row reads better on wide widgets, so it wins unless the column is clearly roomier.
+                    if (wideFit >= narrowFit * WIDE_LAYOUT_BIAS) WIDE else NARROW
+                }
+            }
+        }
+
+        /**
+         * Number of launcher cells needed for a given width.
+         * https://developer.android.com/guide/practices/ui_guidelines/widget_design
+         */
+        fun cellsForWidth(widthDp: Float): Int {
+            var n = 2
+            while (70 * n - 30 <= widthDp) {
+                ++n
+            }
+            return n - 1
+        }
     }
 }
+
+/**
+ * Multiplier for icon, text and spacing sizes. Content grows with the widget in
+ * [WidgetTheme.ContentSize.AUTO]; fixed sizes are still shrunk when they would not fit, so a resize
+ * never clips the content.
+ */
+fun widgetContentScale(
+    layout: BatteryLayout,
+    isDualPod: Boolean,
+    theme: WidgetTheme,
+    widthDp: Float,
+    heightDp: Float,
+): Float {
+    if (layout == BatteryLayout.TINY_COLUMN) return 1f
+    val fit = fitScale(layout, isDualPod, theme, widthDp, heightDp)
+    val preferred = theme.contentSize.fixedScale ?: fit
+    return min(preferred, fit).coerceIn(MIN_CONTENT_SCALE, MAX_CONTENT_SCALE)
+}
+
+private fun fitScale(
+    layout: BatteryLayout,
+    isDualPod: Boolean,
+    theme: WidgetTheme,
+    widthDp: Float,
+    heightDp: Float,
+): Float {
+    val labelLine = if (theme.showDeviceLabel) TEXT_LINE_DP else 0f
+    val statusIcons = if (theme.showStatusIcons) SMALL_ICON_DP else 0f
+    val bar = if (theme.showBatteryBars) BAR_HEIGHT_DP + BAR_GAP_DP else 0f
+    val (contentWidth, contentHeight) = when {
+        !isDualPod -> {
+            val text = if (theme.showEstimates) PERCENT_WITH_ESTIMATE_WIDTH_DP else PERCENT_WIDTH_DP
+            (SMALL_ICON_DP + text + 2 * statusIcons) to (SMALL_ICON_DP + bar + labelLine)
+        }
+
+        layout == BatteryLayout.WIDE -> {
+            val items = if (theme.showCase) 3 else 2
+            val item = LARGE_ICON_DP + PERCENT_WIDTH_DP + statusIcons
+            val estimate = if (theme.showEstimates) TEXT_LINE_DP else 0f
+            (items * item + (items - 1) * WIDE_POD_ROW_PADDING_DP) to
+                    (WIDE_POD_ROW_PADDING_DP + LARGE_ICON_DP + estimate + bar + labelLine)
+        }
+
+        else -> {
+            val rows = if (theme.showCase) 3 else 2
+            val text = if (theme.showEstimates) PERCENT_WITH_ESTIMATE_WIDTH_DP else PERCENT_WIDTH_DP
+            (SMALL_ICON_DP + text + 2 * statusIcons) to (rows * (SMALL_ICON_DP + bar) + labelLine)
+        }
+    }
+    val availableWidth = (widthDp - ROOT_HORIZONTAL_PADDING_DP).coerceAtLeast(1f)
+    val availableHeight = (heightDp - ROOT_VERTICAL_PADDING_DP).coerceAtLeast(1f)
+    return min(availableWidth / contentWidth, availableHeight / contentHeight)
+}
+
+private const val WIDE_LAYOUT_BIAS = 0.85f
+private const val MIN_CONTENT_SCALE = 0.7f
+private const val MAX_CONTENT_SCALE = 2.2f
+private const val PERCENT_WIDTH_DP = 36f
+private const val PERCENT_WITH_ESTIMATE_WIDTH_DP = 92f
+private const val BAR_HEIGHT_DP = 4f
+private const val BAR_GAP_DP = 3f
 
 enum class LastKnownPlacement {
     NONE,
@@ -35,11 +133,12 @@ fun lastKnownPlacement(
     labelShown: Boolean,
     heightDp: Float,
     fontScale: Float,
+    contentScale: Float = 1f,
 ): LastKnownPlacement = when {
     !hasLastKnown -> LastKnownPlacement.NONE
     layout == BatteryLayout.TINY_COLUMN -> LastKnownPlacement.NONE
     !labelShown -> LastKnownPlacement.LABEL_SLOT
-    heightDp >= requiredHeightForOwnLine(isDualPod, layout, fontScale) -> LastKnownPlacement.OWN_LINE
+    heightDp >= requiredHeightForOwnLine(isDualPod, layout, fontScale) * contentScale -> LastKnownPlacement.OWN_LINE
     else -> LastKnownPlacement.APPEND_TO_LABEL
 }
 

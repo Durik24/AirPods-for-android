@@ -110,11 +110,9 @@ class WidgetConfigurationViewModel @Inject constructor(
     fun selectPreset(preset: WidgetTheme.Preset) {
         log(TAG, INFO) { "selectPreset(preset=$preset)" }
         forceCustomMode.value = false
-        currentTheme.value = WidgetTheme(
+        currentTheme.value = currentTheme.value.copy(
             backgroundColor = preset.presetBg,
             foregroundColor = preset.presetFg,
-            backgroundAlpha = currentTheme.value.backgroundAlpha,
-            showDeviceLabel = currentTheme.value.showDeviceLabel,
         )
     }
 
@@ -147,6 +145,12 @@ class WidgetConfigurationViewModel @Inject constructor(
     fun setShowDeviceLabel(show: Boolean) {
         log(TAG, INFO) { "setShowDeviceLabel(show=$show)" }
         currentTheme.value = currentTheme.value.copy(showDeviceLabel = show)
+    }
+
+    fun updateOptions(transform: (WidgetTheme) -> WidgetTheme) {
+        val updated = transform(currentTheme.value)
+        log(TAG, INFO) { "updateOptions(theme=$updated)" }
+        currentTheme.value = updated.copy(cornerRadius = WidgetTheme.clampCornerRadius(updated.cornerRadius))
     }
 
     fun resetToDefaults() {

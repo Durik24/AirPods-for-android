@@ -204,6 +204,7 @@ internal fun WidgetConfigurationContent() = PreviewWrapper {
         onSetForegroundColor = {},
         onSetBackgroundAlpha = {},
         onSetShowDeviceLabel = {},
+        onUpdateOptions = {},
         onReset = {},
         onConfirm = {},
         onCancel = {},
