@@ -428,7 +428,7 @@ internal fun UpgradeHeroCard(
 // Preview copy matches the shipped preamble in length: the mascot/text split only reads correctly
 // if the text wraps like it does in the app.
 private const val PREVIEW_PREAMBLE =
-    "CAPod is developed by a single person. Upgrading unlocks extra features and helps keep the app alive."
+    "PodPulse is based on CAPod, developed by a single person. Upgrading unlocks extra features and helps keep the app alive."
 
 @Preview2
 @Composable

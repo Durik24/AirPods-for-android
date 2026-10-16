@@ -19,7 +19,7 @@ esac
 RESULTS=app-e2e/build/outputs/beta-tests/$3
 : "${ANDROID_SERIAL:?set ANDROID_SERIAL to an emulator started for this run}"
 
-APP=eu.darken.capod
+APP=app.podpulse
 TEST_PKG=eu.darken.capod.e2e
 RUNNER=$TEST_PKG/androidx.test.runner.AndroidJUnitRunner
 DEVICE_OUT=/sdcard/Android/media/$TEST_PKG/additional_test_output

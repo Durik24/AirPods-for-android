@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Artıq satın almısınız?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play bu yüksəltməyə artıq sahib olduğunuzu bildirir, lakin bərpa edilə bilmədi. Satın aldığınız Google hesabından istifadə etdiyinizə əmin olun. Play Store sinxronizasiyası bir qədər vaxt apara bilər — yenidən başlatmağı, Google Play keşini təmizləməyi və ya sadəcə gözləməyi sınayın.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">%1$s əldə edin</string>
-    <string name="upgrade_preamble">CAPod tək bir şəxs tərəfindən hazırlanır. Yüksəltmə əlavə funksiyaların kilidini açır və tətbiqin yaşamasına kömək edir.</string>
+    <string name="upgrade_preamble">PodPulse tək bir şəxs tərəfindən hazırlanır. Yüksəltmə əlavə funksiyaların kilidini açır və tətbiqin yaşamasına kömək edir.</string>
     <string name="upgrade_screen_subscription_trial_action">Pulsuz sınağı başlat</string>
     <string name="upgrade_screen_subscription_action">İllik abunə ol</string>
     <string name="upgrade_screen_iap_action">Bir dəfə satın al</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Satınalma bərpa edildi.</string>
     <string name="upgrade_screen_restore_status_title">Status yanlış görünür?</string>
     <string name="upgrade_screen_restore_status_body">Burada göstərilməyən bir yüksəltməyə sahibsinizsə, satınalmanızı bərpa edin.</string>
-    <string name="upgrade_screen_owned_hero_title">Sizdə CAPod Pro var!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Abunəliyiniz vasitəsilə kiliddan çıxarıldı. CAPod-u dəstəklədiyiniz üçün təşəkkürlər!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Birdəfəlik satınalmanız vasitəsilə kiliddan çıxarıldı. CAPod-u dəstəklədiyiniz üçün təşəkkürlər!</string>
+    <string name="upgrade_screen_owned_hero_title">Sizdə PodPulse Pro var!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Abunəliyiniz vasitəsilə kiliddan çıxarıldı. PodPulse-u dəstəklədiyiniz üçün təşəkkürlər!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Birdəfəlik satınalmanız vasitəsilə kiliddan çıxarıldı. PodPulse-u dəstəklədiyiniz üçün təşəkkürlər!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Abunəliyiniz aktivdir və yenilənməyə təyin edilib. Ödəniş Google Play tərəfindən idarə olunur.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Abunəliyiniz aktivdir, lakin yenilənməyə təyin edilməyib. Pro cari dövr bitənə qədər əlçatan qalır.</string>
     <string name="upgrade_screen_owned_iap_title">Birdəfəlik alış</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Bir ödəniş, yenilənmə yoxdur.</string>
     <string name="upgrade_screen_benefits_title">Yüksəltmə üstünlükləri</string>
     <string name="upgrade_screen_restore_body">Bərpa etmə Google Play-dən bu tətbiqin cari hesab üçün alışlarını yenidən yoxlamasını istəyir. Yeni bir alış başlatmır.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod yeni Google Play-i yoxladı, lakin bu tətbiq üçün Google Play istifadə etdiyi hesab üçün heç bir Pro alışı təsdiq edilə bilmədi.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse yeni Google Play-i yoxladı, lakin bu tətbiq üçün Google Play istifadə etdiyi hesab üçün heç bir Pro alışı təsdiq edilə bilmədi.</string>
     <string name="upgrade_screen_restore_contact_hint">Hələ də sıkışmısınız? Alışı edən e-poçtdan dəstək xidmətinə müraciət edin və Google Play sifariş nömrənizi daxil edin.</string>
     <string name="upgrade_screen_contact_support_action">Dəstək xidmətinə müraciət edin</string>
     <string name="settings_upgrade_status_description">Sizin yüksəltmə və alış statusu.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod Google Play-ə qoşula bilmir. Google Play quraşdırılıb və yenilənib? Google hesabınız daxil olub? Google Play tətbiqinin keşini təmizləməyi və cihazınızı yenidən başlatmağı sınayın.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse Google Play-ə qoşula bilmir. Google Play quraşdırılıb və yenilənib? Google hesabınız daxil olub? Google Play tətbiqinin keşini təmizləməyi və cihazınızı yenidən başlatmağı sınayın.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Google Play açıla bilmədi. Bu cihazda yoxolmuş, deaktivləşdirilmiş və ya məhdudlaşdırılmış ola bilər.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play xətası</string>

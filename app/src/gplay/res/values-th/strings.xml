@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">ซื้อไปแล้วใช่ไหม</string>
     <string name="upgrades_gplay_already_owned_description">Google Play รายงานว่าคุณเป็นเจ้าของการอัปเกรดนี้อยู่แล้ว แต่ไม่สามารถกู้คืนได้ ตรวจสอบให้แน่ใจว่าคุณใช้บัญชี Google เดียวกับที่ใช้ซื้อ การซิงค์ข้อมูลของ Play Store อาจใช้เวลาสักครู่ — ลองรีสตาร์ทเครื่อง ล้างแคชของ Google Play หรือรอสักครู่</string>
     <string name="upgrade_badge_label">โปร</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">รับ %1$s</string>
-    <string name="upgrade_preamble">CAPod พัฒนาโดยคนคนเดียว การอัปเกรดจะปลดล็อกฟีเจอร์เพิ่มเติมและช่วยให้แอปนี้ยังคงอยู่ต่อไป</string>
+    <string name="upgrade_preamble">PodPulse พัฒนาโดยคนคนเดียว การอัปเกรดจะปลดล็อกฟีเจอร์เพิ่มเติมและช่วยให้แอปนี้ยังคงอยู่ต่อไป</string>
     <string name="upgrade_screen_subscription_trial_action">เริ่มทดลองใช้ฟรี</string>
     <string name="upgrade_screen_subscription_action">สมัครสมาชิกรายปี</string>
     <string name="upgrade_screen_iap_action">ซื้อครั้งเดียว</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">กู้คืนการซื้อแล้ว</string>
     <string name="upgrade_screen_restore_status_title">สถานะดูไม่ถูกต้องใช่ไหม</string>
     <string name="upgrade_screen_restore_status_body">หากคุณเป็นเจ้าของการอัปเกรดที่ไม่แสดงที่นี่ ให้กู้คืนการซื้อของคุณ</string>
-    <string name="upgrade_screen_owned_hero_title">คุณมี CAPod Pro แล้ว!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">ปลดล็อกโดยการสมัครสมาชิกของคุณ ขอบคุณที่สนับสนุน CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">ปลดล็อกโดยการซื้อครั้งเดียวของคุณ ขอบคุณที่สนับสนุน CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">คุณมี PodPulse Pro แล้ว!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">ปลดล็อกโดยการสมัครสมาชิกของคุณ ขอบคุณที่สนับสนุน PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">ปลดล็อกโดยการซื้อครั้งเดียวของคุณ ขอบคุณที่สนับสนุน PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">การสมัครสมาชิกของคุณใช้งานอยู่และตั้งค่าให้ต่ออายุ การเรียกเก็บเงินจัดการโดย Google Play</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">การสมัครสมาชิกของคุณใช้งานอยู่ แต่ไม่ได้ตั้งค่าให้ต่ออายุ Pro จะยังคงใช้งานได้จนกว่ารอบปัจจุบันจะสิ้นสุด</string>
     <string name="upgrade_screen_owned_iap_title">ซื้อครั้งเดียว</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">ชำระเงินเพียงครั้งเดียว ไม่มีการต่ออายุ</string>
     <string name="upgrade_screen_benefits_title">ประโยชน์ของการอัปเกรด</string>
     <string name="upgrade_screen_restore_body">การกู้คืนขอให้ Google Play ตรวจสอบการซื้อของแอปนี้สำหรับบัญชีปัจจุบันอีกครั้ง ไม่ได้เริ่มการซื้อใหม่</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod เพิ่งตรวจสอบ Google Play แต่ไม่สามารถยืนยันการซื้อ Pro สำหรับบัญชีที่ Google Play ใช้สำหรับแอปนี้ได้</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse เพิ่งตรวจสอบ Google Play แต่ไม่สามารถยืนยันการซื้อ Pro สำหรับบัญชีที่ Google Play ใช้สำหรับแอปนี้ได้</string>
     <string name="upgrade_screen_restore_contact_hint">ยังติดขัดอยู่หรือ? ติดต่อฝ่ายสนับสนุนจากอีเมลที่ทำการซื้อและแนบหมายเลขคำสั่งซื้อ Google Play ของคุณด้วย</string>
     <string name="upgrade_screen_contact_support_action">ติดต่อฝ่ายสนับสนุน</string>
     <string name="settings_upgrade_status_description">สถานะการอัปเกรดและการซื้อของคุณ</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod ไม่สามารถเชื่อมต่อกับ Google Play ได้ Google Play ได้รับการติดตั้งและอัปเดตแล้วหรือไม่? บัญชี Google ของคุณเข้าสู่ระบบแล้วหรือไม่? ลองล้างแคชของแอป Google Play และรีบูตอุปกรณ์ของคุณ</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse ไม่สามารถเชื่อมต่อกับ Google Play ได้ Google Play ได้รับการติดตั้งและอัปเดตแล้วหรือไม่? บัญชี Google ของคุณเข้าสู่ระบบแล้วหรือไม่? ลองล้างแคชของแอป Google Play และรีบูตอุปกรณ์ของคุณ</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">ไม่สามารถเปิด Google Play ได้ แอปอาจไม่มี ถูกปิดใช้งาน หรือถูกจำกัดบนอุปกรณ์นี้</string>
     <string name="upgrades_gplay_internal_error_title">ข้อผิดพลาด Google Play</string>

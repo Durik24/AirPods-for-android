@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">已經購買？</string>
     <string name="upgrades_gplay_already_owned_description">Google Play 顯示你已經擁有此升級項目，但無法還原。請確保你使用購買時所用的 Google 帳戶。Play 商店同步可能需要一些時間——你可以嘗試重新啟動裝置、清除 Google Play 快取，或耐心等候。</string>
     <string name="upgrade_badge_label">專業版</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">取得 %1$s</string>
-    <string name="upgrade_preamble">CAPod 由一個人開發。升級可解鎖額外功能，並有助維持應用程式繼續運作。</string>
+    <string name="upgrade_preamble">PodPulse 由一個人開發。升級可解鎖額外功能，並有助維持應用程式繼續運作。</string>
     <string name="upgrade_screen_subscription_trial_action">開始免費試用</string>
     <string name="upgrade_screen_subscription_action">按年訂閱</string>
     <string name="upgrade_screen_iap_action">一次性購買</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">購買已還原。</string>
     <string name="upgrade_screen_restore_status_title">狀態看似不對？</string>
     <string name="upgrade_screen_restore_status_body">如果你擁有的升級項目未有在此顯示，請還原購買。</string>
-    <string name="upgrade_screen_owned_hero_title">你已擁有 CAPod Pro！</string>
-    <string name="upgrade_screen_owned_hero_sub_body">由你的訂閱解鎖。感謝你支持 CAPod！</string>
-    <string name="upgrade_screen_owned_hero_iap_body">由你的一次性購買解鎖。感謝你支持 CAPod！</string>
+    <string name="upgrade_screen_owned_hero_title">你已擁有 PodPulse Pro！</string>
+    <string name="upgrade_screen_owned_hero_sub_body">由你的訂閱解鎖。感謝你支持 PodPulse！</string>
+    <string name="upgrade_screen_owned_hero_iap_body">由你的一次性購買解鎖。感謝你支持 PodPulse！</string>
     <string name="upgrade_screen_owned_sub_renewing_body">你的訂閱有效，並設定為自動續訂。帳單由 Google Play 管理。</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">你的訂閱有效，但未設定自動續訂。Pro 將維持可用，直到目前計費周期結束。</string>
     <string name="upgrade_screen_owned_iap_title">一次購買</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">一次性付款,無需續訂。</string>
     <string name="upgrade_screen_benefits_title">升級權益</string>
     <string name="upgrade_screen_restore_body">還原會要求 Google Play 重新檢查此應用對目前帳戶的購買紀錄。這不會開始新的購買。</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod 已檢查 Google Play,但無法確認此帳戶的專業版購買紀錄。</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse 已檢查 Google Play,但無法確認此帳戶的專業版購買紀錄。</string>
     <string name="upgrade_screen_restore_contact_hint">仍有問題？請使用進行購買的電郵聯絡支援，並提供您的 Google Play 訂單編號。</string>
     <string name="upgrade_screen_contact_support_action">聯絡支援</string>
     <string name="settings_upgrade_status_description">您的升級和購買狀態。</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod 無法連線至 Google Play。請確認 Google Play 已安裝且為最新版本，同時確保已經登入 Google 帳戶。您可以嘗試清除 Google Play 應用程式的快取或重新啟動您的裝置以修正此問題。</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse 無法連線至 Google Play。請確認 Google Play 已安裝且為最新版本，同時確保已經登入 Google 帳戶。您可以嘗試清除 Google Play 應用程式的快取或重新啟動您的裝置以修正此問題。</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">無法開啟 Google Play。此應用程式可能在此裝置上遺失、已停用或受限制。</string>
     <string name="upgrades_gplay_internal_error_title">Google Play 錯誤</string>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <queries>
-        <package android:name="eu.darken.capod" />
+        <package android:name="app.podpulse" />
     </queries>
 
 </manifest>

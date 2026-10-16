@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Reeds gekoop?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play meld dat jy reeds hierdie opgradering besit, maar dit kon nie herstel word nie. Maak seker jy gebruik die Google-rekening waarmee jy gekoop het. Play Store-sinkronisasie kan tyd neem — probeer herbegin, maak die Google Play-kas skoon, of wag eenvoudig \'n rukkie.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Kry %1$s</string>
-    <string name="upgrade_preamble">CAPod word deur een persoon ontwikkel. Opgradering ontsluit ekstra kenmerke en help om die toepassing lewend te hou.</string>
+    <string name="upgrade_preamble">PodPulse word deur een persoon ontwikkel. Opgradering ontsluit ekstra kenmerke en help om die toepassing lewend te hou.</string>
     <string name="upgrade_screen_subscription_trial_action">Begin gratis proeftydperk</string>
     <string name="upgrade_screen_subscription_action">Teken jaarliks in</string>
     <string name="upgrade_screen_iap_action">Koop eenmalig</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Aankoop herstel.</string>
     <string name="upgrade_screen_restore_status_title">Lyk die status verkeerd?</string>
     <string name="upgrade_screen_restore_status_body">As jy \'n opgradering besit wat nie hier gewys word nie, herstel jou aankoop.</string>
-    <string name="upgrade_screen_owned_hero_title">Jy het CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Ontsluit deur jou intekening. Dankie dat jy CAPod ondersteun!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Ontsluit deur jou eenmalige aankoop. Dankie dat jy CAPod ondersteun!</string>
+    <string name="upgrade_screen_owned_hero_title">Jy het PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Ontsluit deur jou intekening. Dankie dat jy PodPulse ondersteun!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Ontsluit deur jou eenmalige aankoop. Dankie dat jy PodPulse ondersteun!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Jou intekening is aktief en gestel om te hernu. Fakturering word deur Google Play bestuur.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Jou intekening is aktief, maar nie gestel om te hernu nie. Pro bly beskikbaar totdat die huidige tydperk eindig.</string>
     <string name="upgrade_screen_owned_iap_title">Eenmalige aankoop</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Een betaling, geen vernuwings nie.</string>
     <string name="upgrade_screen_benefits_title">Upgrade-voordele</string>
     <string name="upgrade_screen_restore_body">Herstel vra Google Play om hierdie app se aankope vir die huidige rekening na te gaan. Dit begin geen nuwe aankoop nie.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod het Google Play nou-nou gekontroleer, maar geen Pro-aankoop kon bevestig word vir die rekening wat Google Play vir hierdie app gebruik nie.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse het Google Play nou-nou gekontroleer, maar geen Pro-aankoop kon bevestig word vir die rekening wat Google Play vir hierdie app gebruik nie.</string>
     <string name="upgrade_screen_restore_contact_hint">Nog steeds vas? Neem kontak op met ondersteuning van die e-posadres wat die aankoop gemaak het en voeg jou Google Play-ordernommer by.</string>
     <string name="upgrade_screen_contact_support_action">Neem kontak op met ondersteuning</string>
     <string name="settings_upgrade_status_description">Jou upgrade- en aankoopstatus.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod kan nie aan Google Play koppel nie. Is Google Play geïnstalleer en opgedateer? Is jou Google-rekening aangemeld? Probeer om die kas van die Google Play-toepassing skoon te maak en jou toestel herlaai.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse kan nie aan Google Play koppel nie. Is Google Play geïnstalleer en opgedateer? Is jou Google-rekening aangemeld? Probeer om die kas van die Google Play-toepassing skoon te maak en jou toestel herlaai.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Kon Google Play nie oopmaak nie. Dit kan vermis, gedeaktiveer of beperkt wees op hierdie toestel.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play-fout</string>

@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Již zakoupeno?</string>
     <string name="upgrades_gplay_already_owned_description">Služba Google Play hlásí, že tento upgrade již vlastníte, ale nepodařilo se ho obnovit. Ujistěte se, že používáte účet Google, se kterým jste nákup provedli. Synchronizace Obchodu Play může nějakou dobu trvat — zkuste restartovat zařízení, vymazat mezipaměť Obchodu Google Play nebo prostě počkat.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Získat %1$s</string>
-    <string name="upgrade_preamble">CAPod vyvíjí jediná osoba. Upgrade odemkne další funkce a pomůže udržet aplikaci naživu.</string>
+    <string name="upgrade_preamble">PodPulse vyvíjí jediná osoba. Upgrade odemkne další funkce a pomůže udržet aplikaci naživu.</string>
     <string name="upgrade_screen_subscription_trial_action">Spustit zkušební verzi</string>
     <string name="upgrade_screen_subscription_action">Předplatit na rok</string>
     <string name="upgrade_screen_iap_action">Koupit jednou</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Nákup obnoven.</string>
     <string name="upgrade_screen_restore_status_title">Zdá se vám stav nesprávný?</string>
     <string name="upgrade_screen_restore_status_body">Pokud vlastníte upgrade, který zde není zobrazen, obnovte svůj nákup.</string>
-    <string name="upgrade_screen_owned_hero_title">Máte CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Odemčeno vaším předplatným. Děkujeme za podporu CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Odemčeno vaším jednorázovým nákupem. Děkujeme za podporu CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">Máte PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Odemčeno vaším předplatným. Děkujeme za podporu PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Odemčeno vaším jednorázovým nákupem. Děkujeme za podporu PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Vaše předplatné je aktivní a nastavené na obnovování. Fakturaci spravuje Google Play.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Vaše předplatné je aktivní, ale není nastaveno na obnovování. Pro zůstane dostupné až do konce aktuálního období.</string>
     <string name="upgrade_screen_owned_iap_title">Jednorázový nákup</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Jedna platba, bez obnovení.</string>
     <string name="upgrade_screen_benefits_title">Výhody upgradu</string>
     <string name="upgrade_screen_restore_body">Obnovení požádá Google Play, aby znovu zkontroloval nákupy v této aplikaci pro aktuální účet. Nespouští nový nákup.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod právě zkontroloval Google Play, ale pro účet, který Google Play pro tuto aplikaci používá, nelze potvrdit nákup Pro.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse právě zkontroloval Google Play, ale pro účet, který Google Play pro tuto aplikaci používá, nelze potvrdit nákup Pro.</string>
     <string name="upgrade_screen_restore_contact_hint">Stále máte problémy? Kontaktujte podporu z e-mailu, který realizoval nákup, a uveďte své číslo objednávky z Google Play.</string>
     <string name="upgrade_screen_contact_support_action">Kontaktovat podporu</string>
     <string name="settings_upgrade_status_description">Váš stav upgradu a nákupu.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod se nemůže připojit k Obchodu Google Play. Je Obchod Google Play nainstalován a aktualizován? Jste přihlášeni k účtu Google? Zkuste vymazat mezipaměť Obchodu Google Play a restartovat zařízení.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse se nemůže připojit k Obchodu Google Play. Je Obchod Google Play nainstalován a aktualizován? Jste přihlášeni k účtu Google? Zkuste vymazat mezipaměť Obchodu Google Play a restartovat zařízení.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Nelze otevřít Google Play. Aplikace může chybět, být vypnuta nebo omezena na tomto zařízení.</string>
     <string name="upgrades_gplay_internal_error_title">Chyba Google Play</string>

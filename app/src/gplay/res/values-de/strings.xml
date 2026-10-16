@@ -7,7 +7,7 @@
     <string name="upgrades_gplay_already_owned_description">Google Play meldet, dass du dieses Upgrade bereits besitzt, es konnte jedoch nicht wiederhergestellt werden. Stelle sicher, dass du das Google-Konto verwendest, mit dem du es gekauft hast. Die Synchronisierung des Play Stores kann etwas dauern – versuche dein Gerät neu zu starten, den Cache von Google Play zu leeren oder einfach abzuwarten.</string>
     <string name="upgrade_badge_label">Pro</string>
     <string name="upgrade_screen_title_template">Hol dir %1$s</string>
-    <string name="upgrade_preamble">CAPod wird von einer einzelnen Person entwickelt. Ein Upgrade schaltet zusätzliche Funktionen frei und hilft, die App am Leben zu erhalten.</string>
+    <string name="upgrade_preamble">PodPulse wird von einer einzelnen Person entwickelt. Ein Upgrade schaltet zusätzliche Funktionen frei und hilft, die App am Leben zu erhalten.</string>
     <string name="upgrade_screen_subscription_trial_action">Kostenlos testen</string>
     <string name="upgrade_screen_subscription_action">Jährlich abonnieren</string>
     <string name="upgrade_screen_iap_action">Einmalig kaufen</string>
@@ -19,9 +19,9 @@
     <string name="upgrade_screen_restore_success_message">Kauf wiederhergestellt.</string>
     <string name="upgrade_screen_restore_status_title">Status sieht falsch aus?</string>
     <string name="upgrade_screen_restore_status_body">Wenn du ein Upgrade besitzt, das hier nicht angezeigt wird, stell deinen Kauf wieder her.</string>
-    <string name="upgrade_screen_owned_hero_title">Du hast CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Freigeschaltet durch dein Abonnement. Danke, dass du CAPod unterstützt!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Freigeschaltet durch deinen einmaligen Kauf. Danke, dass du CAPod unterstützt!</string>
+    <string name="upgrade_screen_owned_hero_title">Du hast PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Freigeschaltet durch dein Abonnement. Danke, dass du PodPulse unterstützt!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Freigeschaltet durch deinen einmaligen Kauf. Danke, dass du PodPulse unterstützt!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Dein Abonnement ist aktiv und wird verlängert. Die Abrechnung erfolgt über Google Play.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Dein Abonnement ist aktiv, wird aber nicht verlängert. Pro bleibt bis zum Ende des aktuellen Zeitraums verfügbar.</string>
     <string name="upgrade_screen_owned_iap_title">Einmaliger Kauf</string>
@@ -51,11 +51,11 @@
     <string name="upgrade_screen_iap_offer_body">Einmalige Zahlung, kein Abo.</string>
     <string name="upgrade_screen_benefits_title">Vorteile des Upgrades</string>
     <string name="upgrade_screen_restore_body">Das Wiederherstellen veranlasst Google Play dazu, die Käufe dieser App für das aktuelle Konto erneut zu überprüfen. Es wird kein neuer Kauf getätigt.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod hat gerade Google Play überprüft, aber für das Konto, das Google Play für diese App verwendet, konnte kein Pro-Kauf bestätigt werden.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse hat gerade Google Play überprüft, aber für das Konto, das Google Play für diese App verwendet, konnte kein Pro-Kauf bestätigt werden.</string>
     <string name="upgrade_screen_restore_contact_hint">Immer noch nicht weiter? Kontaktiere den Support von der E-Mail-Adresse aus, mit der der Kauf getätigt wurde, und gib deine Google-Play-Bestellnummer an.</string>
     <string name="upgrade_screen_contact_support_action">Support kontaktieren</string>
     <string name="settings_upgrade_status_description">Dein Upgrade- und Kaufstatus.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod kann keine Verbindung zu Google Play herstellen. Ist Google Play installiert und auf dem neuesten Stand? Ist dein Google-Konto angemeldet? Versuche, den Cache der Google-Play-App zu leeren und dein Gerät neu zu starten.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse kann keine Verbindung zu Google Play herstellen. Ist Google Play installiert und auf dem neuesten Stand? Ist dein Google-Konto angemeldet? Versuche, den Cache der Google-Play-App zu leeren und dein Gerät neu zu starten.</string>
     <string name="upgrades_gplay_not_installed_message">Google Play konnte nicht geöffnet werden. Möglicherweise ist die App auf diesem Gerät nicht installiert, deaktiviert oder der Zugriff darauf wurde eingeschränkt.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play Fehler</string>
     <string name="upgrades_gplay_internal_error_description">Ein interner Fehler bei Google Play ist aufgetreten. Bitte versuche Folgendes:\n\n• Starte dein Gerät neu\n• Leere den Cache des Google Play Stores\n• Versuche es später erneut</string>

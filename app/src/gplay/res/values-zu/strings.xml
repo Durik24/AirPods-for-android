@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Usuvele wathenga?</string>
     <string name="upgrades_gplay_already_owned_description">I-Google Play ibika ukuthi usuvele unalolu shintsho olusheshisiwe, kodwa alukwazanga ukubuyiselwa. Qinisekisa ukuthi usebenzisa i-akhawunti ye-Google owathenga ngayo. Ukuvumelanisa kwe-Play Store kungase kuthathe isikhathi — zama ukuqala kabusha idivayisi, ukususa i-cache ye-Google Play noma ulinde nje.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Thola %1$s</string>
-    <string name="upgrade_preamble">I-CAPod yenziwe umuntu oyedwa. Ukuthuthukisa kuvula izici ezengeziwe futhi kusize ukugcina uhlelo lokusebenza luphila.</string>
+    <string name="upgrade_preamble">I-PodPulse yenziwe umuntu oyedwa. Ukuthuthukisa kuvula izici ezengeziwe futhi kusize ukugcina uhlelo lokusebenza luphila.</string>
     <string name="upgrade_screen_subscription_trial_action">Qala ukuzama kwamahhala</string>
     <string name="upgrade_screen_subscription_action">Bhalisa minyaka yonke</string>
     <string name="upgrade_screen_iap_action">Thenga kanye</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Ukuthenga kubuyiselwe.</string>
     <string name="upgrade_screen_restore_status_title">Isimo sibukeka singalungile?</string>
     <string name="upgrade_screen_restore_status_body">Uma unalo ushintsho olusheshisiwe olungaboniswa lapha, buyisela ukuthenga kwakho.</string>
-    <string name="upgrade_screen_owned_hero_title">Une-CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Kuvulwe ukubhalisa kwakho. Siyabonga ngokusekela i-CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Kuvulwe ukuthenga kwakho okwenziwa kanye. Siyabonga ngokusekela i-CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">Une-PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Kuvulwe ukubhalisa kwakho. Siyabonga ngokusekela i-PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Kuvulwe ukuthenga kwakho okwenziwa kanye. Siyabonga ngokusekela i-PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Ukubhalisa kwakho kuyasebenza futhi kuhlelelwe ukuvuselelwa. Ukukhokhiswa kuphathwa yi-Google Play.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Ukubhalisa kwakho kuyasebenza, kodwa akuhlelelwe ukuvuselelwa. I-Pro ihlala itholakala kuze kuphele isikhathi samanje.</string>
     <string name="upgrade_screen_owned_iap_title">Ukuthenga kube kanye</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Inkokhelo eyodwa, akukho okuphinda.</string>
     <string name="upgrade_screen_benefits_title">Izinzuzo zokuthuthukisa</string>
     <string name="upgrade_screen_restore_body">Ukubuyisela kucela i-Google Play ukuthi iphinde ihlole ukuthenga kwalolu hlelo lokusebenza kule akhawunti okuyiyo manje. Akuqalisi ukuthenga okusha.</string>
-    <string name="upgrade_screen_restore_checked_message">I-CAPod isanda kuhlola i-Google Play, kodwa akukho kuthenga kwe-Pro okuqinisekiswe kule akhawunti i-Google Play eyisebenzisayo kulolu hlelo lokusebenza.</string>
+    <string name="upgrade_screen_restore_checked_message">I-PodPulse isanda kuhlola i-Google Play, kodwa akukho kuthenga kwe-Pro okuqinisekiswe kule akhawunti i-Google Play eyisebenzisayo kulolu hlelo lokusebenza.</string>
     <string name="upgrade_screen_restore_contact_hint">Usabambeke? Xhumana nosizo usuka ku-imeyili eyenza ukuthenga futhi ufake inombolo ye-oda ye-Google Play.</string>
     <string name="upgrade_screen_contact_support_action">Xhumana nolungiselelo</string>
     <string name="settings_upgrade_status_description">Isimo sokuthuthukiswa nokuthenga kwakho.</string>
-    <string name="upgrades_gplay_unavailable_error_description">I-CAPod ayikwazi ukuxhuma ku-Google Play. Ingabe Google Play ifakiwe futhi isesikhathini? Ingabe i-akhawunti yakho ye-Google ingene? Zama ukusula i-cache yohlelo lokusebenza lwe-Google Play futhi uphinde uqalise idivayisi yakho.</string>
+    <string name="upgrades_gplay_unavailable_error_description">I-PodPulse ayikwazi ukuxhuma ku-Google Play. Ingabe Google Play ifakiwe futhi isesikhathini? Ingabe i-akhawunti yakho ye-Google ingene? Zama ukusula i-cache yohlelo lokusebenza lwe-Google Play futhi uphinde uqalise idivayisi yakho.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Ayikho ukuvula Google Play. Ingabe ayikho, ikungena noma kuthintwa ku-divayisi yakho.</string>
     <string name="upgrades_gplay_internal_error_title">Iphutha lika-Google Play</string>

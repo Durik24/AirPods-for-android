@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Jau nusipirkote?</string>
     <string name="upgrades_gplay_already_owned_description">„Google Play“ praneša, kad jau turite šį atnaujinimą, tačiau jo nepavyko atkurti. Įsitikinkite, kad naudojate tą pačią „Google“ paskyrą, su kuria atlikote pirkimą. „Play Store“ sinchronizavimas gali užtrukti — pabandykite paleisti įrenginį iš naujo, išvalyti „Google Play“ talpyklą arba tiesiog palaukite.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Gauti %1$s</string>
-    <string name="upgrade_preamble">CAPod kuria vienas žmogus. Atnaujinimas atrakina papildomas funkcijas ir padeda išlaikyti programą gyvą.</string>
+    <string name="upgrade_preamble">PodPulse kuria vienas žmogus. Atnaujinimas atrakina papildomas funkcijas ir padeda išlaikyti programą gyvą.</string>
     <string name="upgrade_screen_subscription_trial_action">Pradėti nemokamą bandomąjį laikotarpį</string>
     <string name="upgrade_screen_subscription_action">Prenumeruoti metams</string>
     <string name="upgrade_screen_iap_action">Pirkti vieną kartą</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Pirkimas atkurtas.</string>
     <string name="upgrade_screen_restore_status_title">Būsena atrodo neteisinga?</string>
     <string name="upgrade_screen_restore_status_body">Jei turite atnaujinimą, kuris čia nerodomas, atkurkite savo pirkimą.</string>
-    <string name="upgrade_screen_owned_hero_title">Turite CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Atrakinta jūsų prenumeratos dėka. Dėkojame, kad remiate CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Atrakinta jūsų vienkartinio pirkimo dėka. Dėkojame, kad remiate CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">Turite PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Atrakinta jūsų prenumeratos dėka. Dėkojame, kad remiate PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Atrakinta jūsų vienkartinio pirkimo dėka. Dėkojame, kad remiate PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Jūsų prenumerata aktyvi ir bus atnaujinta. Atsiskaitymą tvarko „Google Play“.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Jūsų prenumerata aktyvi, tačiau nebus atnaujinta. „Pro“ liks pasiekiama iki dabartinio laikotarpio pabaigos.</string>
     <string name="upgrade_screen_owned_iap_title">Vienkartinis pirkimas</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Vienas mokėjimas, be atnaujinimų.</string>
     <string name="upgrade_screen_benefits_title">Atnaujinimo privalumai</string>
     <string name="upgrade_screen_restore_body">Atkūrimas prašo Google Play dar kartą patikrinti šios programos pirkimus dabartinei paskyrai. Jis nepradeda naujo pirkimo.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod patikrino Google Play, tačiau Pro pirkimo negalėjo patvirtinti paskyroje, kurią Google Play naudoja šiai programai.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse patikrino Google Play, tačiau Pro pirkimo negalėjo patvirtinti paskyroje, kurią Google Play naudoja šiai programai.</string>
     <string name="upgrade_screen_restore_contact_hint">Vis dar nepadėjo? Susisiekite su palaikymu iš el. pašto, kuris atliko pirkimą, ir pridėkite savo Google Play užsakymo numerį.</string>
     <string name="upgrade_screen_contact_support_action">Susisiekti su palaikymu</string>
     <string name="settings_upgrade_status_description">Jūsų atnaujinimo ir pirkimo būsena.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod negali prisijungti prie Google Play. Ar Google Play įdiegtas ir atnaujintas? Ar jūsų Google paskyra prisijungusi? Pabandykite išvalyti Google Play programos talpyklą ir paleisti įrenginį iš naujo.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse negali prisijungti prie Google Play. Ar Google Play įdiegtas ir atnaujintas? Ar jūsų Google paskyra prisijungusi? Pabandykite išvalyti Google Play programos talpyklą ir paleisti įrenginį iš naujo.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Nepavyko atidaryti „Google Play\". Gali būti, kad programėlė pašalinta, išjungta arba apribota šiame įrenginyje.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play klaida</string>

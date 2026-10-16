@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Már megvásároltad?</string>
     <string name="upgrades_gplay_already_owned_description">A Google Play szerint már megvásároltad ezt a frissítést, de nem sikerült visszaállítani. Győződj meg róla, hogy azzal a Google-fiókkal vagy bejelentkezve, amellyel a vásárlást végezted. A Play Store szinkronizálása eltarthat egy ideig – próbáld meg újraindítani a készüléket, törölni a Google Play gyorsítótárát, vagy egyszerűen várj egy kicsit.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Szerezd meg a %1$s-t</string>
-    <string name="upgrade_preamble">A CAPod-ot egyetlen ember fejleszti. A frissítés extra funkciókat old fel, és segít életben tartani az alkalmazást.</string>
+    <string name="upgrade_preamble">A PodPulse-ot egyetlen ember fejleszti. A frissítés extra funkciókat old fel, és segít életben tartani az alkalmazást.</string>
     <string name="upgrade_screen_subscription_trial_action">Ingyenes próba indítása</string>
     <string name="upgrade_screen_subscription_action">Éves előfizetés</string>
     <string name="upgrade_screen_iap_action">Egyszeri vásárlás</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">A vásárlás visszaállítva.</string>
     <string name="upgrade_screen_restore_status_title">Rosszul néz ki az állapot?</string>
     <string name="upgrade_screen_restore_status_body">Ha rendelkezel olyan frissítéssel, amely itt nem jelenik meg, állítsd vissza a vásárlásod.</string>
-    <string name="upgrade_screen_owned_hero_title">Megvan a CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Az előfizetésed oldotta fel. Köszönjük, hogy támogatod a CAPod-ot!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Az egyszeri vásárlásod oldotta fel. Köszönjük, hogy támogatod a CAPod-ot!</string>
+    <string name="upgrade_screen_owned_hero_title">Megvan a PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Az előfizetésed oldotta fel. Köszönjük, hogy támogatod a PodPulse-ot!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Az egyszeri vásárlásod oldotta fel. Köszönjük, hogy támogatod a PodPulse-ot!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Az előfizetésed aktív, és megújulásra van állítva. A számlázást a Google Play kezeli.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Az előfizetésed aktív, de nincs megújulásra állítva. A Pro a jelenlegi időszak végéig elérhető marad.</string>
     <string name="upgrade_screen_owned_iap_title">Egyszeri vásárlás</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Egy fizetés, nincs megújítás.</string>
     <string name="upgrade_screen_benefits_title">Frissítés előnyei</string>
     <string name="upgrade_screen_restore_body">A helyreállítás megkéri a Google Play-t, hogy újra ellenőrizze az alkalmazás vásárlásait az aktuális fiók esetén. Nem kezdeményez új vásárlást.</string>
-    <string name="upgrade_screen_restore_checked_message">A CAPod éppen ellenőrizte a Google Play-t, de nem lehetett megerősíteni a Pro vásárlást az olyan fiók esetén, amelyet a Google Play használ ehhez az alkalmazáshoz.</string>
+    <string name="upgrade_screen_restore_checked_message">A PodPulse éppen ellenőrizte a Google Play-t, de nem lehetett megerősíteni a Pro vásárlást az olyan fiók esetén, amelyet a Google Play használ ehhez az alkalmazáshoz.</string>
     <string name="upgrade_screen_restore_contact_hint">Még mindig nem működik? Vegye fel a kapcsolatot az ügyfélszolgálattal abból az e-mail-fiókból, amely a vásárlást végezte, és adja meg Google Play rendelésszámát.</string>
     <string name="upgrade_screen_contact_support_action">Lépjen kapcsolatba az ügyfélszolgálattal</string>
     <string name="settings_upgrade_status_description">Az Ön frissítésének és vásárlásának állapota.</string>
-    <string name="upgrades_gplay_unavailable_error_description">A CAPod nem tud csatlakozni a Google Playhez. Telepítve és naprakész a Google Play? Be vagy jelentkezve Google-fiókkal? Próbáld meg törölni a Google Play alkalmazás gyorsítótárát és indítsd újra az eszközt.</string>
+    <string name="upgrades_gplay_unavailable_error_description">A PodPulse nem tud csatlakozni a Google Playhez. Telepítve és naprakész a Google Play? Be vagy jelentkezve Google-fiókkal? Próbáld meg törölni a Google Play alkalmazás gyorsítótárát és indítsd újra az eszközt.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Nem sikerült megnyitni a Google Play-t. Lehetséges, hogy hiányzik, le van tiltva vagy korlátozva van ezen az eszközön.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play hiba</string>

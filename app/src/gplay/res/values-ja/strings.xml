@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">購入済みですか?</string>
     <string name="upgrades_gplay_already_owned_description">Google Playによると、このアップグレードはすでに購入済みですが、復元できませんでした。購入時に使用したGoogleアカウントを使用していることを確認してください。Playストアの同期には時間がかかる場合があります。再起動する、Google Playのキャッシュを削除する、またはしばらく待ってみてください。</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">%1$s を入手</string>
-    <string name="upgrade_preamble">CAPodは一人の個人開発者によって開発されています。アップグレードすると追加機能が使えるようになり、アプリの継続的な開発を支えることができます。</string>
+    <string name="upgrade_preamble">PodPulseは一人の個人開発者によって開発されています。アップグレードすると追加機能が使えるようになり、アプリの継続的な開発を支えることができます。</string>
     <string name="upgrade_screen_subscription_trial_action">試用を開始する</string>
     <string name="upgrade_screen_subscription_action">年間プランを購入</string>
     <string name="upgrade_screen_iap_action">1回のみ購入</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">購入を復元しました。</string>
     <string name="upgrade_screen_restore_status_title">ステータスがおかしいですか?</string>
     <string name="upgrade_screen_restore_status_body">こちらに表示されていないアップグレードをお持ちの場合は、購入を復元してください。</string>
-    <string name="upgrade_screen_owned_hero_title">CAPod Proをご利用中です!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">サブスクリプションにより解除されています。CAPodをサポートいただきありがとうございます!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">1回限りの購入により解除されています。CAPodをサポートいただきありがとうございます!</string>
+    <string name="upgrade_screen_owned_hero_title">PodPulse Proをご利用中です!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">サブスクリプションにより解除されています。PodPulseをサポートいただきありがとうございます!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">1回限りの購入により解除されています。PodPulseをサポートいただきありがとうございます!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">サブスクリプションは有効で、更新するように設定されています。請求はGoogle Playによって管理されます。</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">サブスクリプションは有効ですが、更新しないように設定されています。Proは現在の期間が終了するまで利用できます。</string>
     <string name="upgrade_screen_owned_iap_title">1 回限りの購入</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">1回の支払い、更新なし。</string>
     <string name="upgrade_screen_benefits_title">アップグレード特典</string>
     <string name="upgrade_screen_restore_body">復元により、Google Play にこのアプリの購入を現在のアカウント用に再確認するよう依頼します。新しい購入は開始されません。</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod が Google Play を確認しましたが、このアプリが使用しているアカウントの Pro 購入を確認できませんでした。</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse が Google Play を確認しましたが、このアプリが使用しているアカウントの Pro 購入を確認できませんでした。</string>
     <string name="upgrade_screen_restore_contact_hint">まだ問題がありますか?購入を行ったメールアドレスからサポートに連絡し、Google Play の注文番号を含めてください。</string>
     <string name="upgrade_screen_contact_support_action">サポートに連絡</string>
     <string name="settings_upgrade_status_description">アップグレードと購入ステータス。</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod は Google Play に接続できません。Google Play はインストールされており、最新の状態ですか？Google アカウントにログインしていますか？Google Play アプリのキャッシュをクリアしてデバイスを再起動してみてください。</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse は Google Play に接続できません。Google Play はインストールされており、最新の状態ですか？Google アカウントにログインしていますか？Google Play アプリのキャッシュをクリアしてデバイスを再起動してみてください。</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Google Playを開くことができませんでした。このデバイスで見つからないか、無効になっているか、制限されている可能性があります。</string>
     <string name="upgrades_gplay_internal_error_title">Google Play エラー</string>

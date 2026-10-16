@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Gia cumprà?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play rapporta che ti possedas gia quest upgrade, ma el n\'ha betg pudì vegnir restaurà. Controllescha che ti utiliseschias il conto Google cun il qual ti has cumprà. La sincronisaziun da Play Store po durar in pau temp — emprova da reaviar il apparat, svidar la cache da Google Play u simplamain spetgar.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Obtegnair %1$s</string>
-    <string name="upgrade_preamble">CAPod vegn sviluppà da ina persuna suletta. In upgrade sblochescha funcziuns supplementaras ed ajuda a mantegnair l\'app en vita.</string>
+    <string name="upgrade_preamble">PodPulse vegn sviluppà da ina persuna suletta. In upgrade sblochescha funcziuns supplementaras ed ajuda a mantegnair l\'app en vita.</string>
     <string name="upgrade_screen_subscription_trial_action">Cumenzar l\'emprova gratuita</string>
     <string name="upgrade_screen_subscription_action">S\'abunar mintg\'onn</string>
     <string name="upgrade_screen_iap_action">Cumprar ina giada</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Cumpra restaurada.</string>
     <string name="upgrade_screen_restore_status_title">Il status para fauss?</string>
     <string name="upgrade_screen_restore_status_body">Sche ti possedas in upgrade che n\'è betg mussà qua, restaura tia cumpra.</string>
-    <string name="upgrade_screen_owned_hero_title">Ti has CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Sblocca tras tes abunament. Grazia per sustegnair CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Sblocca tras tia cumpra unica. Grazia per sustegnair CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">Ti has PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Sblocca tras tes abunament. Grazia per sustegnair PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Sblocca tras tia cumpra unica. Grazia per sustegnair PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Tes abunament è activ ed è configurà per sa renovar. La facturaziun vegn administrada da Google Play.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Tes abunament è activ, ma n\'è betg configurà per sa renovar. Pro resta disponibel enfin la fin dal perioda actuala.</string>
     <string name="upgrade_screen_owned_iap_title">Cumpra unica</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Ina sola pagada, senza renovaziuns.</string>
     <string name="upgrade_screen_benefits_title">Avantogis dal upgrade</string>
     <string name="upgrade_screen_restore_body">Restaurar dumonda a Google Play da verificar da nov las acquistas da questa app per il cunt actual. Il na scomenza ina nova acquista.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod ha controlà Google Play, ma nagina acquista Pro n\'ha pudi vegnir confermada per il cunt chi Google Play utilisescha per questa app.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse ha controlà Google Play, ma nagina acquista Pro n\'ha pudi vegnir confermada per il cunt chi Google Play utilisescha per questa app.</string>
     <string name="upgrade_screen_restore_contact_hint">Anc incordat? Contactescha il support cun l\'email che ha fatg l\'acquista ed includ il numer dal comonda da Google Play.</string>
     <string name="upgrade_screen_contact_support_action">Contactar il support</string>
     <string name="settings_upgrade_status_description">Tes status dal upgrade e da l\'acquista.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod n\'uschia connectar a Google Play. Es Google Play installà e actualizà? Es tia conta Google connectada? Emprova a svida il cache da l\'app Google Play e a restartar tes apparat.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse n\'uschia connectar a Google Play. Es Google Play installà e actualizà? Es tia conta Google connectada? Emprova a svida il cache da l\'app Google Play e a restartar tes apparat.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Na pud avrir Google Play. El po esser gliensch, deactivad ubain retrett sin quest apparat.</string>
     <string name="upgrades_gplay_internal_error_title">Errur Google Play</string>

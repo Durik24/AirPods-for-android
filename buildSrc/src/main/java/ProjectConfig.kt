@@ -6,6 +6,7 @@ import java.util.Properties
 
 open class ProjectConfig {
     val packageName = "eu.darken.capod"
+    val applicationId = "app.podpulse"
     val minSdk = 26
 
     val compileSdk = 36

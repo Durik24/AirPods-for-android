@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Þegar keypt?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play greinir frá því að þú eigir þegar þessa uppfærslu, en ekki tókst að endurheimta hana. Gakktu úr skugga um að þú sért að nota sama Google reikning og þú keyptir með. Samstilling Play Store getur tekið tíma — reyndu að endurræsa, hreinsa skyndiminni Google Play eða bíða einfaldlega.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Fáðu %1$s</string>
-    <string name="upgrade_preamble">CAPod er þróað af einum einstaklingi. Uppfærsla opnar aukamöguleika og hjálpar til við að halda forritinu á lífi.</string>
+    <string name="upgrade_preamble">PodPulse er þróað af einum einstaklingi. Uppfærsla opnar aukamöguleika og hjálpar til við að halda forritinu á lífi.</string>
     <string name="upgrade_screen_subscription_trial_action">Byrja ókeypis prufutíma</string>
     <string name="upgrade_screen_subscription_action">Gerast áskrifandi árlega</string>
     <string name="upgrade_screen_iap_action">Kaupa einu sinni</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Kaup endurheimt.</string>
     <string name="upgrade_screen_restore_status_title">Lítur staðan út fyrir að vera röng?</string>
     <string name="upgrade_screen_restore_status_body">Ef þú átt uppfærslu sem er ekki sýnd hér skaltu endurheimta kaupin.</string>
-    <string name="upgrade_screen_owned_hero_title">Þú ert með CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Opnað með áskrift þínni. Takk fyrir að styðja CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Opnað með einskiptiskaupum þínum. Takk fyrir að styðja CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">Þú ert með PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Opnað með áskrift þínni. Takk fyrir að styðja PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Opnað með einskiptiskaupum þínum. Takk fyrir að styðja PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Áskrift þín er virk og stillt á að endurnýjast. Greiðslur eru í umsjón Google Play.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Áskrift þín er virk, en ekki stillt á að endurnýjast. Pro er áfram aðgengilegt til loka núverandi tímabils.</string>
     <string name="upgrade_screen_owned_iap_title">Einskiptiskaup</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Ein greiðsla, engar endurnýjanir.</string>
     <string name="upgrade_screen_benefits_title">Kostir uppfærslu</string>
     <string name="upgrade_screen_restore_body">Endurreisn biður Google Play að endurstaðfesta kaup þessa forrits fyrir núverandi reikning. Það byrjar ekki ný kaup.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod athugaði nýlega hjá Google Play, en engin Pro kaup gætu verið staðfest fyrir reikninginn sem Google Play notar fyrir þessa forrit.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse athugaði nýlega hjá Google Play, en engin Pro kaup gætu verið staðfest fyrir reikninginn sem Google Play notar fyrir þessa forrit.</string>
     <string name="upgrade_screen_restore_contact_hint">Ennþá fastur? Hafðu samband við stuðning frá tölvupósti sem gerði kaupin og tiltaktu Google Play pöntunarnúmeri þinn.</string>
     <string name="upgrade_screen_contact_support_action">Hafðu samband við stuðning</string>
     <string name="settings_upgrade_status_description">Staða þinnar uppfærslu og kaupa</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod getur ekki tengst Google Play. Er Google Play uppsett og uppfært? Er Google reikningurinn þinn skráður inn? Reyndu að hreinsa skyndiminni Google Play appsins og endurræstu tækið þitt.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse getur ekki tengst Google Play. Er Google Play uppsett og uppfært? Er Google reikningurinn þinn skráður inn? Reyndu að hreinsa skyndiminni Google Play appsins og endurræstu tækið þitt.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Gat ekki opnað Google Play. Það er hugsanlega ekki til, óvirkt eða takmarkað á þessu tæki.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play villa</string>

@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Comporadu giai?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play informat chi tenes giai custu megioramentu, ma no est istadu possìbile lu ripristinare. Assegura·ti de impreare su contu Google chi as impreadu pro comporare. Sa sincronizatzione de su Play Store podet leare tempus — proa a torrare a allutu su dispositivu, a bogare sa memoria cache de Google Play o solu a aspetare.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Otine %1$s</string>
-    <string name="upgrade_preamble">CAPod est isvilupada de una persona sola. Su megioramentu isblocat funtziones in prus e agiudat a mantènnere s\'aplicatzione bia.</string>
+    <string name="upgrade_preamble">PodPulse est isvilupada de una persona sola. Su megioramentu isblocat funtziones in prus e agiudat a mantènnere s\'aplicatzione bia.</string>
     <string name="upgrade_screen_subscription_trial_action">Cumintza sa proa gratùita</string>
     <string name="upgrade_screen_subscription_action">Abbòna·ti annualmente</string>
     <string name="upgrade_screen_iap_action">Cùmpera una borta</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Cùmperu ripristinadu.</string>
     <string name="upgrade_screen_restore_status_title">S\'istadu paret erradu?</string>
     <string name="upgrade_screen_restore_status_body">Si tenes unu megioramentu chi no est ammustradu inoghe, ripristina su cùmperu tuo.</string>
-    <string name="upgrade_screen_owned_hero_title">Tenes CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Isblocadu dae s\'abbonamentu tuo. Gràtzias pro sustènnere CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Isblocadu dae su cùmperu tuo de una borta. Gràtzias pro sustènnere CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">Tenes PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Isblocadu dae s\'abbonamentu tuo. Gràtzias pro sustènnere PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Isblocadu dae su cùmperu tuo de una borta. Gràtzias pro sustènnere PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">S\'abbonamentu tuo est atívu e programadu pro si rennovare. Sa fatturatzione est ghestida dae Google Play.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">S\'abbonamentu tuo est atívu, ma no est programadu pro si rennovare. Pro abarrat disponìbile finas a sa fine de su períodu atuale.</string>
     <string name="upgrade_screen_owned_iap_title">Cùmperu de una borta</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Unu pagamentu, sena renovatziones.</string>
     <string name="upgrade_screen_benefits_title">Beneficios de s\'agiornamentu</string>
     <string name="upgrade_screen_restore_body">Su ristoru domanda a Google Play de verificà de noe sos compronius de sa aplicatzione pro s\'acontu in usu. No iniciat ungha noa compra.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod at pena controlladu Google Play, ma perunu comporu Pro at pòtzidu èssere cunfirmadu pro su contu chi Google Play est impreende pro custa aplicatzione.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse at pena controlladu Google Play, ma perunu comporu Pro at pòtzidu èssere cunfirmadu pro su contu chi Google Play est impreende pro custa aplicatzione.</string>
     <string name="upgrade_screen_restore_contact_hint">Ancora blocau? Cunta sos suportu dae s\'email chi at fetu sa compra e inclui su numeru de s\'ordine Google Play.</string>
     <string name="upgrade_screen_contact_support_action">Cunta sos suportu</string>
     <string name="settings_upgrade_status_description">S\'istadu de su megioramentu e de sa comporadura tua.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod non podet si connètere a Google Play. Google Play est installadu e agiornadu? Su contu Google tuo est intradu? Proa a limpiare sa cache de s\'aplicatzione Google Play e a torrare a allùghere su dispositivu tuo.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse non podet si connètere a Google Play. Google Play est installadu e agiornadu? Su contu Google tuo est intradu? Proa a limpiare sa cache de s\'aplicatzione Google Play e a torrare a allùghere su dispositivu tuo.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">No s\'at pòdidhu abèrere Google Play. Podet esse mancante, disabilitadu o ristrettu in custu dispositibu.</string>
     <string name="upgrades_gplay_internal_error_title">Errore de Google Play</string>

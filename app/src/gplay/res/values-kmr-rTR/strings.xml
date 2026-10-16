@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Jixwe kirriye?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play radigihîne ku vê nûvekirinê jixwe di destê te de ye, lê ew nehat vegerandin. Piştrast bike ku tu bi hesabê Google yê ku pê kirriye têkevî. Senkronîzasyona Play Store dibe ku demê bigire — biceribîne ku cîhazê ji nû ve bidî destpêkirin, cache\'ya Google Play paqij bike an tenê bisekine.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Wergir %1$s</string>
-    <string name="upgrade_preamble">CAPod ji aliyê kesekî yekane ve tê pêşxistin. Nûvekirin taybetmendiyên zêde vedike û dibe alîkar ku sepan berdewam bimîne.</string>
+    <string name="upgrade_preamble">PodPulse ji aliyê kesekî yekane ve tê pêşxistin. Nûvekirin taybetmendiyên zêde vedike û dibe alîkar ku sepan berdewam bimîne.</string>
     <string name="upgrade_screen_subscription_trial_action">Ceribandina belaş dest pê bike</string>
     <string name="upgrade_screen_subscription_action">Bi salane bibe abone</string>
     <string name="upgrade_screen_iap_action">Carekê bikire</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Kirîn hate vegerandin.</string>
     <string name="upgrade_screen_restore_status_title">Rewş xelet xuya dike?</string>
     <string name="upgrade_screen_restore_status_body">Heke nûvekirineke te heye ku li vir nayê xuyakirin, kirîna xwe vegerîne.</string>
-    <string name="upgrade_screen_owned_hero_title">CAPod Pro li ba te ye!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Bi aboneya te hat vekirin. Spas ji bo piştgiriya te ya CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Bi kirîna te ya carekî hat vekirin. Spas ji bo piştgiriya te ya CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">PodPulse Pro li ba te ye!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Bi aboneya te hat vekirin. Spas ji bo piştgiriya te ya PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Bi kirîna te ya carekî hat vekirin. Spas ji bo piştgiriya te ya PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Aboneya te çalak e û hatiye mêhengkirin ku were nûkirin. Faturekirin ji aliyê Google Play ve tê rêvebirin.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Aboneya te çalak e, lê ji bo nûkirinê nehatiye mêhengkirin. Pro heta dawiya dema heyî berdest dimîne.</string>
     <string name="upgrade_screen_owned_iap_title">Kirîna carekî</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Yek parçe, nûvekirtin tune.</string>
     <string name="upgrade_screen_benefits_title">Faydeyên bilindkirinê</string>
     <string name="upgrade_screen_restore_body">Vegera kirinê Google Play-ê ji nû ve dixwaze kiryarên vê sepandinê ji bo hesaba heyî kontrol bike. Ew kiryara nû nabe.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod Google Play kontrol kir, lê ji bo hesaba ku Google Play ji bo vê sepandinê bikar tîne, kiryara Pro tesdîq nebû.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse Google Play kontrol kir, lê ji bo hesaba ku Google Play ji bo vê sepandinê bikar tîne, kiryara Pro tesdîq nebû.</string>
     <string name="upgrade_screen_restore_contact_hint">Hîn jî kelî mabû? Pîştgirê peywendî bin û e-nameya kiryara û hejmar berneya Google Play xwe tê de bîn.</string>
     <string name="upgrade_screen_contact_support_action">Pîştgirê peywendî bin</string>
     <string name="settings_upgrade_status_description">Rewşa nûvekirin û kirîna te.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod nikare bi Google Play-ê ve girêbe. Google Play sazkirî û nûve ye? Hesaba Googleya we têketî ye? Mîzgîna appê Google Play paqij bike û amûra xwe ji nû ve xebitîne.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse nikare bi Google Play-ê ve girêbe. Google Play sazkirî û nûve ye? Hesaba Googleya we têketî ye? Mîzgîna appê Google Play paqij bike û amûra xwe ji nû ve xebitîne.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Nabe ku Google Play vebikira. Dibe ku ew tuneye, neçalak bûya an sînorkirî ye li ser vî amûrê.</string>
     <string name="upgrades_gplay_internal_error_title">Xeletiya Google Play</string>

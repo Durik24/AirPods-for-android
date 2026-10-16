@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">ഇതിനകം വാങ്ങിയോ?</string>
     <string name="upgrades_gplay_already_owned_description">നിങ്ങൾ ഇതിനകം ഈ അപ്ഗ്രേഡ് സ്വന്തമാക്കിയിട്ടുണ്ടെന്ന് Google Play റിപ്പോർട്ട് ചെയ്യുന്നു, പക്ഷേ അത് പുനഃസ്ഥാപിക്കാൻ കഴിഞ്ഞില്ല. നിങ്ങൾ വാങ്ങിയ Google അക്കൗണ്ട് ഉപയോഗിക്കുന്നുണ്ടെന്ന് ഉറപ്പാക്കുക. Play Store സമന്വയത്തിന് സമയമെടുത്തേക്കാം — റീബൂട്ട് ചെയ്യാൻ ശ്രമിക്കുക, Google Play കാഷെ ക്ലിയർ ചെയ്യുക അല്ലെങ്കിൽ അൽപ്പം കാത്തിരിക്കുക.</string>
     <string name="upgrade_badge_label">പ്രോ</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">%1$s നേടുക</string>
-    <string name="upgrade_preamble">CAPod ഒരൊറ്റ വ്യക്തിയാണ് വികസിപ്പിക്കുന്നത്. അപ്ഗ്രേഡ് ചെയ്യുന്നത് അധിക ഫീച്ചറുകൾ അൺലോക്ക് ചെയ്യുകയും ആപ്പ് സജീവമായി നിലനിർത്താൻ സഹായിക്കുകയും ചെയ്യുന്നു.</string>
+    <string name="upgrade_preamble">PodPulse ഒരൊറ്റ വ്യക്തിയാണ് വികസിപ്പിക്കുന്നത്. അപ്ഗ്രേഡ് ചെയ്യുന്നത് അധിക ഫീച്ചറുകൾ അൺലോക്ക് ചെയ്യുകയും ആപ്പ് സജീവമായി നിലനിർത്താൻ സഹായിക്കുകയും ചെയ്യുന്നു.</string>
     <string name="upgrade_screen_subscription_trial_action">സൗജന്യ ട്രയൽ ആരംഭിക്കുക</string>
     <string name="upgrade_screen_subscription_action">വാർഷികമായി സബ്സ്ക്രൈബ് ചെയ്യുക</string>
     <string name="upgrade_screen_iap_action">ഒറ്റത്തവണ വാങ്ങുക</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">വാങ്ങൽ പുനഃസ്ഥാപിച്ചു.</string>
     <string name="upgrade_screen_restore_status_title">നില തെറ്റാണെന്ന് തോന്നുന്നുവോ?</string>
     <string name="upgrade_screen_restore_status_body">ഇവിടെ കാണിക്കാത്ത ഒരു അപ്ഗ്രേഡ് നിങ്ങളുടെ പക്കലുണ്ടെങ്കിൽ, നിങ്ങളുടെ വാങ്ങൽ പുനഃസ്ഥാപിക്കുക.</string>
-    <string name="upgrade_screen_owned_hero_title">നിങ്ങൾക്ക് CAPod Pro ഉണ്ട്!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ വഴി അൺലോക്ക് ചെയ്തു. CAPod-നെ പിന്തുണച്ചതിന് നന്ദി!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">നിങ്ങളുടെ ഒറ്റത്തവണ വാങ്ങൽ വഴി അൺലോക്ക് ചെയ്തു. CAPod-നെ പിന്തുണച്ചതിന് നന്ദി!</string>
+    <string name="upgrade_screen_owned_hero_title">നിങ്ങൾക്ക് PodPulse Pro ഉണ്ട്!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ വഴി അൺലോക്ക് ചെയ്തു. PodPulse-നെ പിന്തുണച്ചതിന് നന്ദി!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">നിങ്ങളുടെ ഒറ്റത്തവണ വാങ്ങൽ വഴി അൺലോക്ക് ചെയ്തു. PodPulse-നെ പിന്തുണച്ചതിന് നന്ദി!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ സജീവമാണ്, പുതുക്കാൻ സജ്ജീകരിച്ചിരിക്കുന്നു. ബിൽലിംഗ് Google Play നിയന്ത്രിക്കുന്നു.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">നിങ്ങളുടെ സബ്സ്ക്രിപ്ഷൻ സജീവമാണ്, പക്ഷേ പുതുക്കാൻ സജ്ജീകരിച്ചിട്ടില്ല. നിലവിലെ കാലയളവ് അവസാനിക്കുന്നത് വരെ Pro ലഭ്യമായി തുടരും.</string>
     <string name="upgrade_screen_owned_iap_title">ഒറ്റത്തവണ വാങ്ങൽ</string>
@@ -54,11 +54,11 @@
     <string name="upgrade_screen_iap_offer_body">ഒരു പേയ്‌മെന്റ്, പുതുക്കലില്ല.</string>
     <string name="upgrade_screen_benefits_title">അപ്ഗ്രേഡ് ഗുണങ്ങൾ</string>
     <string name="upgrade_screen_restore_body">പുനരുദ്ധാരണ Google Play നെ ഈ ആപ്ലിക്കേഷന്റെ വാങ്ങലുകൾ നിലവിലെ അക്കൗണ്ടിനായി വീണ്ടും പരിശോധിക്കാൻ ആവശ്യപ്പെടുന്നു. ഇത് ഒരു പുതിയ വാങ്ങൽ ആരംഭിക്കുന്നില്ല.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod ഇപ്പോൾ Google Play പരിശോധിച്ചു, എന്നാൽ ഈ ആപ്ലിക്കേഷനിനായി Google Play ഉപയോഗിക്കുന്ന അക്കൗണ്ടിനായി Pro വാങ്ങൽ സ്ഥിരീകരിക്കാൻ കഴിഞ്ഞില്ല.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse ഇപ്പോൾ Google Play പരിശോധിച്ചു, എന്നാൽ ഈ ആപ്ലിക്കേഷനിനായി Google Play ഉപയോഗിക്കുന്ന അക്കൗണ്ടിനായി Pro വാങ്ങൽ സ്ഥിരീകരിക്കാൻ കഴിഞ്ഞില്ല.</string>
     <string name="upgrade_screen_restore_contact_hint">ഇനിയും കുടുങ്ങിയിരിക്കുന്നുണ്ടോ? വാങ്ങൽ നടത്തിയ ഇമെയിൽ വിലാസത്തിൽ നിന്ന് പിന്തുണയ്ക്കായി ബന്ധപ്പെടുക കൂടാതെ നിങ്ങളുടെ Google Play ഓർഡർ നമ്പർ ചേർക്കുക.</string>
     <string name="upgrade_screen_contact_support_action">പിന്തുണയ്ക്കായി ബന്ധപ്പെടുക</string>
     <string name="settings_upgrade_status_description">നിങ്ങളുടെ അപ്ഗ്രേഡിന്റെയും വാങ്ങലിന്റെയും സ്ഥിതി.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod-നിന് Google Play-യുമായി കണക്റ്റുചെയ്യാൻ കഴിയുന്നില്ല. Google Play ഇൻസ്റ്റാൾ ചെയ്‌ത് അപ്‌ഡേറ്റ് ചെയ്‌തിട്ടുണ്ടോ? നിങ്ങളുടെ Google അക്കൗണ്ട് ലോഗിൻ ചെയ്‌തിട്ടുണ്ടോ? Google Play ആപ്പിന്റെ കാഷെ മായ്‌ക്കാനും നിങ്ങളുടെ ഉപകരണം റീബൂട്ട് ചെയ്യാനും ശ്രമിക്കുക.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse-നിന് Google Play-യുമായി കണക്റ്റുചെയ്യാൻ കഴിയുന്നില്ല. Google Play ഇൻസ്റ്റാൾ ചെയ്‌ത് അപ്‌ഡേറ്റ് ചെയ്‌തിട്ടുണ്ടോ? നിങ്ങളുടെ Google അക്കൗണ്ട് ലോഗിൻ ചെയ്‌തിട്ടുണ്ടോ? Google Play ആപ്പിന്റെ കാഷെ മായ്‌ക്കാനും നിങ്ങളുടെ ഉപകരണം റീബൂട്ട് ചെയ്യാനും ശ്രമിക്കുക.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Google Play തുറക്കാൻ കഴിഞ്ഞില്ല. ഇത് നഷ്ടപ്പെട്ടിരിക്കാം, പ്രവർത്തനരഹിതമാക്കപ്പെട്ടിരിക്കാം അല്ലെങ്കിൽ ഈ ഉപകരണത്തിൽ നിയന്ത്രിതമാക്കപ്പെട്ടിരിക്കാം.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play പിശക്</string>

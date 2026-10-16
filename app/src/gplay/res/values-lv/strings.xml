@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Jau iegādājies?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play ziņo, ka tev jau ir šis jauninājums, taču to neizdevās atjaunot. Pārliecinies, ka izmanto to pašu Google kontu, ar kuru veici pirkumu. Play veikala sinhronizācija var aizņemt laiku — mēģini restartēt ierīci, notīrīt Google Play kešatmiņu vai vienkārši uzgaidi.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Iegūstiet %1$s</string>
-    <string name="upgrade_preamble">CAPod izstrādā viens cilvēks. Jaunināšana atbloķē papildu funkcijas un palīdz uzturēt lietotni dzīvu.</string>
+    <string name="upgrade_preamble">PodPulse izstrādā viens cilvēks. Jaunināšana atbloķē papildu funkcijas un palīdz uzturēt lietotni dzīvu.</string>
     <string name="upgrade_screen_subscription_trial_action">Sākt bezmaksas izmēģinājumu</string>
     <string name="upgrade_screen_subscription_action">Abonēt uz gadu</string>
     <string name="upgrade_screen_iap_action">Pirkt vienreiz</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Pirkums atjaunots.</string>
     <string name="upgrade_screen_restore_status_title">Statuss izskatās nepareizs?</string>
     <string name="upgrade_screen_restore_status_body">Ja tev pieder jauninājums, kas šeit nav redzams, atjauno savu pirkumu.</string>
-    <string name="upgrade_screen_owned_hero_title">Tev ir CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Atbloķēts ar tavu abonementu. Paldies, ka atbalsti CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Atbloķēts ar tavu vienreizējo pirkumu. Paldies, ka atbalsti CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">Tev ir PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Atbloķēts ar tavu abonementu. Paldies, ka atbalsti PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Atbloķēts ar tavu vienreizējo pirkumu. Paldies, ka atbalsti PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Tavs abonements ir aktīvs un iestatīts atjaunoties. Norēķinus pārvalda Google Play.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Tavs abonements ir aktīvs, taču nav iestatīts atjaunoties. Pro paliks pieejams līdz pašreizējā perioda beigām.</string>
     <string name="upgrade_screen_owned_iap_title">Vienreizējs pirkums</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Viens maksājums, bez atjaunošanas.</string>
     <string name="upgrade_screen_benefits_title">Jaunināšanas priekšrocības</string>
     <string name="upgrade_screen_restore_body">Atjaunošana lūdz Google Play pārbaudīt šīs programmas pirkumus pašreizējam kontam. Tas nesāk jaunu pirkumu.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod nesen pārbaudīja Google Play, taču Pro pirkums nevar tikt apstiprināts kontam, ko Google Play izmanto šai programmai.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse nesen pārbaudīja Google Play, taču Pro pirkums nevar tikt apstiprināts kontam, ko Google Play izmanto šai programmai.</string>
     <string name="upgrade_screen_restore_contact_hint">Joprojām problēma? Sazinieties ar atbalstu no e-pasta, kas veica pirkumu, un iekļaujiet jūsu Google Play pasūtījuma numuru.</string>
     <string name="upgrade_screen_contact_support_action">Sazinieties ar atbalstu</string>
     <string name="settings_upgrade_status_description">Jūsu jaunināšanas un pirkuma statuss.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod nevar izveidot savienojumu ar Google Play. Vai Google Play ir instalēts un atjaunināts? Vai jūsu Google konts ir pieteicies? Mēģiniet notīrīt Google Play lietotnes kešatmiņu un restartēt ierīci.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse nevar izveidot savienojumu ar Google Play. Vai Google Play ir instalēts un atjaunināts? Vai jūsu Google konts ir pieteicies? Mēģiniet notīrīt Google Play lietotnes kešatmiņu un restartēt ierīci.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Nevarēja atvērt Google Play. Tā šajā ierīcē var nebūt, tas var būt atspējots vai ierobežots.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play kļūda</string>

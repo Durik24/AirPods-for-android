@@ -6,6 +6,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Companion App for AirPods"
+rootProject.name = "PodPulse"
 include ':app'
 include ':app-e2e'

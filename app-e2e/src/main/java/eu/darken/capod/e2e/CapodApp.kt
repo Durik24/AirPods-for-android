@@ -159,7 +159,7 @@ class CapodApp {
     }
 
     companion object {
-        const val PKG = "eu.darken.capod"
+        const val PKG = "app.podpulse"
         private const val TIMEOUT_MS = 30_000L
         private const val SETTLE_POLL_MS = 150L
         private const val SCROLL_POLL_MS = 1_000L

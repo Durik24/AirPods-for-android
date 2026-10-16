@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Ai cumpărat deja?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play raportează că deții deja acest upgrade, dar nu a putut fi restaurat. Asigură-te că folosești contul Google cu care ai făcut achiziția. Sincronizarea Play Store poate dura ceva timp — încearcă să repornești telefonul, să ștergi memoria cache a Google Play sau pur și simplu așteaptă.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Obține %1$s</string>
-    <string name="upgrade_preamble">CAPod este dezvoltat de o singură persoană. Upgrade-ul deblochează funcții suplimentare și ajută la menținerea aplicației în viață.</string>
+    <string name="upgrade_preamble">PodPulse este dezvoltat de o singură persoană. Upgrade-ul deblochează funcții suplimentare și ajută la menținerea aplicației în viață.</string>
     <string name="upgrade_screen_subscription_trial_action">Începe încercarea gratuită</string>
     <string name="upgrade_screen_subscription_action">Abonează-te anual</string>
     <string name="upgrade_screen_iap_action">Cumpără o dată</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Achiziție restaurată.</string>
     <string name="upgrade_screen_restore_status_title">Starea pare greșită?</string>
     <string name="upgrade_screen_restore_status_body">Dacă deții un upgrade care nu apare aici, restaurează-ți achiziția.</string>
-    <string name="upgrade_screen_owned_hero_title">Ai CAPod Pro!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Deblocat de abonamentul tău. Mulțumim că susții CAPod!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Deblocat de achiziția ta unică. Mulțumim că susții CAPod!</string>
+    <string name="upgrade_screen_owned_hero_title">Ai PodPulse Pro!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Deblocat de abonamentul tău. Mulțumim că susții PodPulse!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Deblocat de achiziția ta unică. Mulțumim că susții PodPulse!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Abonamentul tău este activ și setat să se reînnoiască. Facturarea este gestionată de Google Play.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Abonamentul tău este activ, dar nu este setat să se reînnoiască. Pro rămâne disponibil până la sfârșitul perioadei curente.</string>
     <string name="upgrade_screen_owned_iap_title">Achiziție unică</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">O singură plată, fără reînnoiri.</string>
     <string name="upgrade_screen_benefits_title">Avantajele actualizării</string>
     <string name="upgrade_screen_restore_body">Restaurarea cere Google Play să verifice din nou achizițiile acestei aplicații pentru contul actual. Nu pornește o nouă achiziție.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod tocmai a verificat Google Play, dar nu a putut confirma nicio achiziție Pro pentru contul pe care Google Play îl folosește pentru această aplicație.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse tocmai a verificat Google Play, dar nu a putut confirma nicio achiziție Pro pentru contul pe care Google Play îl folosește pentru această aplicație.</string>
     <string name="upgrade_screen_restore_contact_hint">Ești încă blocat? Contactează suportul din email-ul care a făcut achiziția și include numărul comenzii Google Play.</string>
     <string name="upgrade_screen_contact_support_action">Contactează suportul</string>
     <string name="settings_upgrade_status_description">Statusul tău de actualizare și achiziție.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod nu se poate conecta la Google Play. Este Google Play instalat și actualizat? Contul tău Google este conectat? Încearcă să ștergi memoria cache a aplicației Google Play și să repornești dispozitivul.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse nu se poate conecta la Google Play. Este Google Play instalat și actualizat? Contul tău Google este conectat? Încearcă să ștergi memoria cache a aplicației Google Play și să repornești dispozitivul.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Nu s-a putut deschide Google Play. Este posibil să lipsească, să fie dezactivat sau restricționat pe acest dispozitiv.</string>
     <string name="upgrades_gplay_internal_error_title">Eroare Google Play</string>

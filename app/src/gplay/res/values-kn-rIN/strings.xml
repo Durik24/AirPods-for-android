@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">ಈಗಾಗಲೇ ಖರೀದಿಸಿದ್ದೀರಾ?</string>
     <string name="upgrades_gplay_already_owned_description">ನೀವು ಈ ಅಪ್‌ಗ್ರೇಡ್ ಅನ್ನು ಈಗಾಗಲೇ ಹೊಂದಿದ್ದೀರಿ ಎಂದು Google Play ವರದಿ ಮಾಡುತ್ತದೆ, ಆದರೆ ಅದನ್ನು ಮರುಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ. ನೀವು ಖರೀದಿಸಿದ Google ಖಾತೆಯನ್ನೇ ಬಳಸುತ್ತಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. Play Store ಸಿಂಕ್ರೊನೈಸೇಶನ್‌ಗೆ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಹುದು — ಮರುಪ್ರಾರಂಭಿಸಲು, Google Play ಕ್ಯಾಶ್ ಅನ್ನು ತೆರವುಗೊಳಿಸಲು ಅಥವಾ ಸ್ವಲ್ಪ ಕಾಯಲು ಪ್ರಯತ್ನಿಸಿ.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">%1$s ಪಡೆಯಿರಿ</string>
-    <string name="upgrade_preamble">CAPod ಅನ್ನು ಒಬ್ಬ ವ್ಯಕ್ತಿ ಅಭಿವೃದ್ಧಿಪಡಿಸುತ್ತಾರೆ. ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡುವುದರಿಂದ ಹೆಚ್ಚುವರಿ ವೈಶಿಷ್ಟ್ಯಗಳು ಅನ್‌ಲಾಕ್ ಆಗುತ್ತವೆ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಜೀವಂತವಾಗಿರಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.</string>
+    <string name="upgrade_preamble">PodPulse ಅನ್ನು ಒಬ್ಬ ವ್ಯಕ್ತಿ ಅಭಿವೃದ್ಧಿಪಡಿಸುತ್ತಾರೆ. ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡುವುದರಿಂದ ಹೆಚ್ಚುವರಿ ವೈಶಿಷ್ಟ್ಯಗಳು ಅನ್‌ಲಾಕ್ ಆಗುತ್ತವೆ ಮತ್ತು ಅಪ್ಲಿಕೇಶನ್ ಜೀವಂತವಾಗಿರಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.</string>
     <string name="upgrade_screen_subscription_trial_action">ಉಚಿತ ಪ್ರಯೋಗ ಪ್ರಾರಂಭಿಸಿ</string>
     <string name="upgrade_screen_subscription_action">ವಾರ್ಷಿಕವಾಗಿ ಚಂದಾದಾರರಾಗಿ</string>
     <string name="upgrade_screen_iap_action">ಒಮ್ಮೆ ಖರೀದಿಸಿ</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">ಖರೀದಿ ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ.</string>
     <string name="upgrade_screen_restore_status_title">ಸ್ಥಿತಿ ತಪ್ಪಾಗಿ ಕಾಣುತ್ತಿದೆಯೇ?</string>
     <string name="upgrade_screen_restore_status_body">ಇಲ್ಲಿ ತೋರಿಸದ ಅಪ್‌ಗ್ರೇಡ್ ಅನ್ನು ನೀವು ಹೊಂದಿದ್ದರೆ, ನಿಮ್ಮ ಖರೀದಿಯನ್ನು ಮರುಸ್ಥಾಪಿಸಿ.</string>
-    <string name="upgrade_screen_owned_hero_title">ನಿಮ್ಮಲ್ಲಿ CAPod Pro ಇದೆ!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆಯಿಂದ ಅನ್‌ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. CAPod ಅನ್ನು ಬೆಂಬಲಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">ನಿಮ್ಮ ಒಂದು ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಅನ್‌ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. CAPod ಅನ್ನು ಬೆಂಬಲಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!</string>
+    <string name="upgrade_screen_owned_hero_title">ನಿಮ್ಮಲ್ಲಿ PodPulse Pro ಇದೆ!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆಯಿಂದ ಅನ್‌ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. PodPulse ಅನ್ನು ಬೆಂಬಲಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">ನಿಮ್ಮ ಒಂದು ಬಾರಿಯ ಖರೀದಿಯಿಂದ ಅನ್‌ಲಾಕ್ ಮಾಡಲಾಗಿದೆ. PodPulse ಅನ್ನು ಬೆಂಬಲಿಸಿದ್ದಕ್ಕಾಗಿ ಧನ್ಯವಾದಗಳು!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ಸಕ್ರಿಯವಾಗಿದೆ ಮತ್ತು ನವೀಕರಿಸಲು ಹೊಂದಿಸಲಾಗಿದೆ. ಬಿಲ್ಲಿಂಗ್ ಅನ್ನು Google Play ನಿರ್ವಹಿಸುತ್ತದೆ.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">ನಿಮ್ಮ ಚಂದಾದಾರಿಕೆ ಸಕ್ರಿಯವಾಗಿದೆ, ಆದರೆ ನವೀಕರಿಸಲು ಹೊಂದಿಸಿಲ್ಲ. ಪ್ರಸ್ತುತ ಅವಧಿ ಮುಗಿಯುವವರೆಗೆ Pro ಲಭ್ಯವಿರುತ್ತದೆ.</string>
     <string name="upgrade_screen_owned_iap_title">ಒಂದು ಬಾರಿಯ ಖರೀದಿ</string>

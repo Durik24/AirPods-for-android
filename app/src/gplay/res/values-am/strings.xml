@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">አስቀድመው ገዝተዋል?</string>
     <string name="upgrades_gplay_already_owned_description">Google Play ይህን ማሻሻያ አስቀድመው እንደያዙ ዘግቧል፣ ነገር ግን መመለስ አልተቻለም። በገዙበት የGoogle መለያ እየተጠቀሙ መሆኑን ያረጋግጡ። የPlay Store ማመሳሰል ጊዜ ሊወስድ ይችላል — እንደገና ለማስጀመር፣ የGoogle Play መሸጎጫን ለማጽዳት ወይም በቀላሉ ለመጠበቅ ይሞክሩ።</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">%1$s ያግኑ</string>
-    <string name="upgrade_preamble">CAPod የሚዘጋጀው በአንድ ሰው ብቻ ነው። ማሻሻል ተጨማሪ ባህሪያትን ይከፍታል እንዲሁም መተግበሪያውን ሕያው ለማድረግ ይረዳል።</string>
+    <string name="upgrade_preamble">PodPulse የሚዘጋጀው በአንድ ሰው ብቻ ነው። ማሻሻል ተጨማሪ ባህሪያትን ይከፍታል እንዲሁም መተግበሪያውን ሕያው ለማድረግ ይረዳል።</string>
     <string name="upgrade_screen_subscription_trial_action">ነጻ ሙከራ ጀምር</string>
     <string name="upgrade_screen_subscription_action">በዓመት ይመዝገቡ</string>
     <string name="upgrade_screen_iap_action">አንዴ ይግዙ</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">ግዢ ተመልሷል።</string>
     <string name="upgrade_screen_restore_status_title">ሁኔታው የተሳሳተ ይመስላል?</string>
     <string name="upgrade_screen_restore_status_body">እዚህ ያልታየ ማሻሻያ ካለዎት፣ ግዢዎን ይመልሱ።</string>
-    <string name="upgrade_screen_owned_hero_title">CAPod Pro አለዎት!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">በምዝገባዎ ተከፍቷል። CAPod ን ስለደገፉ እናመሰግናለን!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">በአንድ ጊዜ ግዢዎ ተከፍቷል። CAPod ን ስለደገፉ እናመሰግናለን!</string>
+    <string name="upgrade_screen_owned_hero_title">PodPulse Pro አለዎት!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">በምዝገባዎ ተከፍቷል። PodPulse ን ስለደገፉ እናመሰግናለን!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">በአንድ ጊዜ ግዢዎ ተከፍቷል። PodPulse ን ስለደገፉ እናመሰግናለን!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">ምዝገባዎ ንቁ ነው እና ለማደስ ተዘጋጅቶል። ክፍያ በGoogle Play ይተዳደራል።</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">ምዝገባዎ ንቁ ነው፣ ነገር ግን ለማደስ አልተዘጋጀም። አሑን ያለው ጊዜ እስክያለቅ ድረስ Pro ይገኛል።</string>
     <string name="upgrade_screen_owned_iap_title">አንድ ጊዜ ግዢ</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">አንድ ክፍያ፣ ሌላ ክፍያ የለም።</string>
     <string name="upgrade_screen_benefits_title">ዝመና ጥቅሞች</string>
     <string name="upgrade_screen_restore_body">ማደስ Google Play ን የዚህ መተግበሪያ ግዢዎችን ለአሁኑ መለያ እንደገና ለመረጋገጥ ይጠይቃል። አዲስ ግዢ አይጀምርም።</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod አሁን Google Play አረጋገጠ፣ ነገር ግን Google Play ለዚህ መተግበሪያ ጥቅም ላይ ስለሚውለው መለያ Pro ግዢ ማረጋገጥ አልተቻለም።</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse አሁን Google Play አረጋገጠ፣ ነገር ግን Google Play ለዚህ መተግበሪያ ጥቅም ላይ ስለሚውለው መለያ Pro ግዢ ማረጋገጥ አልተቻለም።</string>
     <string name="upgrade_screen_restore_contact_hint">አሁንም ችግር ካጋጠመዎት? ግዢውን ያደረገው ኢሜይል በመጠቀም ድጋፍ ያግኙ እና Google Play ትዕዛዝ ቁጥርዎን ያካትቱ።</string>
     <string name="upgrade_screen_contact_support_action">ድጋፍ ለማነጋገር</string>
     <string name="settings_upgrade_status_description">የእርስዎ ማሻሻያ እና ግዢ ሁኔታ።</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod ከGoogle Play ጋር መገናኘት አይችልም። Google Play ተጭኖ እና ወቅታዊ ነው? የGoogle መለያዎ ገብቷል? የGoogle Play መተግበሪያ መሸጎጫ ማጥራት እና መሳሪያዎን እንደገና ማስጀመር ይሞክሩ።</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse ከGoogle Play ጋር መገናኘት አይችልም። Google Play ተጭኖ እና ወቅታዊ ነው? የGoogle መለያዎ ገብቷል? የGoogle Play መተግበሪያ መሸጎጫ ማጥራት እና መሳሪያዎን እንደገና ማስጀመር ይሞክሩ።</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Google Play ን መክፈት ተስኖ ዋለ። በዚህ መሣሪያ ላይ ላይሆን ወይም ሰናክሌ ወይም የተገደበ ሊሆን ይችላል።</string>
     <string name="upgrades_gplay_internal_error_title">Google Play ስህተት</string>

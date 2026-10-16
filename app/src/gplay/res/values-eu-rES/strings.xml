@@ -6,9 +6,9 @@
     <string name="upgrades_gplay_already_owned_label">Dagoeneko erosi duzu?</string>
     <string name="upgrades_gplay_already_owned_description">Google Playk dio dagoeneko eguneratze hau baduzula, baina ezin izan da leheneratu. Ziurtatu erosketa egiteko erabili zenuen Google kontua erabiltzen ari zarela. Play Storeren sinkronizazioak denbora har dezake — saiatu berrabiarazten, Google Play-ren katxea garbitzen edo, besterik gabe, itxaroten.</string>
     <string name="upgrade_badge_label">Pro</string>
-    <!-- %1$s is the full localized brand ("CAPod Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
+    <!-- %1$s is the full localized brand ("PodPulse Pro", composed from the app name + postfix) — translate the sentence around it, keep the placeholder. -->
     <string name="upgrade_screen_title_template">Lortu %1$s</string>
-    <string name="upgrade_preamble">CAPod pertsona bakar batek garatzen du. Eguneratzeak eginbide gehigarriak desblokeatzen ditu eta aplikazioa bizirik mantentzen laguntzen du.</string>
+    <string name="upgrade_preamble">PodPulse pertsona bakar batek garatzen du. Eguneratzeak eginbide gehigarriak desblokeatzen ditu eta aplikazioa bizirik mantentzen laguntzen du.</string>
     <string name="upgrade_screen_subscription_trial_action">Hasi doako probaldia</string>
     <string name="upgrade_screen_subscription_action">Harpidetu urtero</string>
     <string name="upgrade_screen_iap_action">Erosi behin</string>
@@ -20,9 +20,9 @@
     <string name="upgrade_screen_restore_success_message">Erosketa leheneratu da.</string>
     <string name="upgrade_screen_restore_status_title">Egoera oker dirudi?</string>
     <string name="upgrade_screen_restore_status_body">Hemen agertzen ez den eguneratzeren bat baduzu, leheneratu zure erosketa.</string>
-    <string name="upgrade_screen_owned_hero_title">CAPod Pro daukazu!</string>
-    <string name="upgrade_screen_owned_hero_sub_body">Zure harpidetzak desblokeatu du. Eskerrik asko CAPod babesteagatik!</string>
-    <string name="upgrade_screen_owned_hero_iap_body">Zure aldi bateko erosketak desblokeatu du. Eskerrik asko CAPod babesteagatik!</string>
+    <string name="upgrade_screen_owned_hero_title">PodPulse Pro daukazu!</string>
+    <string name="upgrade_screen_owned_hero_sub_body">Zure harpidetzak desblokeatu du. Eskerrik asko PodPulse babesteagatik!</string>
+    <string name="upgrade_screen_owned_hero_iap_body">Zure aldi bateko erosketak desblokeatu du. Eskerrik asko PodPulse babesteagatik!</string>
     <string name="upgrade_screen_owned_sub_renewing_body">Zure harpidetza aktibo dago eta berritzeko ezarrita. Fakturazioa Google Playk kudeatzen du.</string>
     <string name="upgrade_screen_owned_sub_not_renewing_body">Zure harpidetza aktibo dago, baina ez dago berritzeko ezarrita. Pro eskuragarri egongo da uneko epea amaitu arte.</string>
     <string name="upgrade_screen_owned_iap_title">Erosketa bakarra</string>
@@ -53,11 +53,11 @@
     <string name="upgrade_screen_iap_offer_body">Ordainketa bakarra, ez da berrituko.</string>
     <string name="upgrade_screen_benefits_title">Bertsio hobetzeko onurak</string>
     <string name="upgrade_screen_restore_body">Berrezartzeak Google Play-ri aplikazio honen erosketen berriro egiaztatzeko eskatzen dio kontu baterako. Ez du erosketa berri bat hasten.</string>
-    <string name="upgrade_screen_restore_checked_message">CAPod-ek Google Play begiratu du, baina ez da Pro erosketaren bat baieztatu ahal izan kontu honetarako.</string>
+    <string name="upgrade_screen_restore_checked_message">PodPulse-ek Google Play begiratu du, baina ez da Pro erosketaren bat baieztatu ahal izan kontu honetarako.</string>
     <string name="upgrade_screen_restore_contact_hint">Oraino traba? Laguntzarekin jarri harremanetan erosketaren e-maila erabilita eta zure Google Play eskaera zenbakia gehitu.</string>
     <string name="upgrade_screen_contact_support_action">Laguntzarekin jarri harremanetan</string>
     <string name="settings_upgrade_status_description">Zure bertsio hobetzea eta erosketaren egoera.</string>
-    <string name="upgrades_gplay_unavailable_error_description">CAPod ezin da Google Playrekin konektatu. Google Play instalatuta eta eguneratuta dago? Zure Google kontua sartu da? Saiatu Google Play aplikazioaren katxea garbitzen eta zure gailua berrabiarazten.</string>
+    <string name="upgrades_gplay_unavailable_error_description">PodPulse ezin da Google Playrekin konektatu. Google Play instalatuta eta eguneratuta dago? Zure Google kontua sartu da? Saiatu Google Play aplikazioaren katxea garbitzen eta zure gailua berrabiarazten.</string>
     <!-- Toast shown when the "Google Play" button of an error dialog can't open Google Play's app info, e.g. Google Play is missing or blocked on this device. "Google Play" is a brand name, keep it untranslated. -->
     <string name="upgrades_gplay_not_installed_message">Ezin da Google Play ireki. Baliteke desagerra, desgaituta edo mugatua izatea gailu honetan.</string>
     <string name="upgrades_gplay_internal_error_title">Google Play errorea</string>
