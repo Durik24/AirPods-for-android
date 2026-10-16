@@ -26,12 +26,12 @@ import androidx.compose.material.icons.twotone.GridView
 import androidx.compose.material.icons.twotone.Tune
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.Card
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedIconButton
+import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -103,16 +103,16 @@ fun DualPodsCard(
 ) {
     val context = LocalContext.current
 
-    ElevatedCard(
+    Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp),
-        shape = RoundedCornerShape(16.dp),
-        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 2.dp),
+        shape = RoundedCornerShape(28.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
     ) {
         Column(
             modifier = Modifier
-                .padding(16.dp)
+                .padding(20.dp)
                 .animateContentSize(),
         ) {
             // Header
@@ -185,7 +185,7 @@ fun DualPodsCard(
                 }
 
                 if (device.profileId != null && onDeviceSettings != null) {
-                    OutlinedIconButton(onClick = onDeviceSettings) {
+                    FilledTonalIconButton(onClick = onDeviceSettings) {
                         Icon(
                             imageVector = Icons.TwoTone.Tune,
                             contentDescription = stringResource(R.string.device_settings_open_cd),
@@ -235,8 +235,8 @@ private fun ColumnScope.DualPodsCardExpanded(
         modifier = Modifier
             .fillMaxWidth()
             .then(if (!device.isLive) Modifier.alpha(0.7f) else Modifier),
-        shape = RoundedCornerShape(12.dp),
-        tonalElevation = 4.dp,
+        shape = RoundedCornerShape(20.dp),
+        color = MaterialTheme.colorScheme.surfaceContainerHighest,
     ) {
         Column(
             modifier = Modifier.padding(16.dp),
@@ -346,14 +346,14 @@ private fun PodGauge(
         // Ring with icon inside
         Box(
             contentAlignment = Alignment.Center,
-            modifier = Modifier.size(68.dp),
+            modifier = Modifier.size(76.dp),
         ) {
             // Track ring
             CircularProgressIndicator(
                 progress = { 1f },
-                modifier = Modifier.size(68.dp),
+                modifier = Modifier.size(76.dp),
                 color = MaterialTheme.colorScheme.surfaceVariant,
-                strokeWidth = 6.dp,
+                strokeWidth = 7.dp,
                 trackColor = MaterialTheme.colorScheme.surfaceVariant,
                 strokeCap = StrokeCap.Round,
             )
@@ -362,9 +362,9 @@ private fun PodGauge(
             if (isKnown) {
                 CircularProgressIndicator(
                     progress = { animatedProgress },
-                    modifier = Modifier.size(68.dp),
+                    modifier = Modifier.size(76.dp),
                     color = ringColor,
-                    strokeWidth = 6.dp,
+                    strokeWidth = 7.dp,
                     trackColor = MaterialTheme.colorScheme.surfaceVariant,
                     strokeCap = StrokeCap.Round,
                 )
@@ -374,11 +374,11 @@ private fun PodGauge(
             Image(
                 painter = painterResource(iconRes),
                 contentDescription = null,
-                modifier = Modifier.size(36.dp),
+                modifier = Modifier.size(40.dp),
             )
         }
 
-        Spacer(modifier = Modifier.height(6.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         // Battery percentage, with the time-remaining estimate inline next to it
         Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {

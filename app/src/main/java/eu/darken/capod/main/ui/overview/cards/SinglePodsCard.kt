@@ -26,10 +26,10 @@ import androidx.compose.material.icons.twotone.Hearing
 import androidx.compose.material.icons.twotone.Tune
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
-import androidx.compose.material3.ElevatedCard
+import androidx.compose.material3.Card
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedIconButton
+import androidx.compose.material3.FilledTonalIconButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -88,16 +88,16 @@ fun SinglePodsCard(
 ) {
     val context = LocalContext.current
 
-    ElevatedCard(
+    Card(
         modifier = Modifier
             .fillMaxWidth()
             .padding(8.dp),
-        shape = RoundedCornerShape(16.dp),
-        elevation = CardDefaults.elevatedCardElevation(defaultElevation = 2.dp),
+        shape = RoundedCornerShape(28.dp),
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainer),
     ) {
         Column(
             modifier = Modifier
-                .padding(16.dp)
+                .padding(20.dp)
                 .animateContentSize(),
         ) {
             // Header
@@ -159,7 +159,7 @@ fun SinglePodsCard(
                 }
 
                 if (device.profileId != null && onDeviceSettings != null) {
-                    OutlinedIconButton(onClick = onDeviceSettings) {
+                    FilledTonalIconButton(onClick = onDeviceSettings) {
                         Icon(
                             imageVector = Icons.TwoTone.Tune,
                             contentDescription = stringResource(R.string.device_settings_open_cd),
@@ -221,8 +221,8 @@ private fun ColumnScope.SinglePodsCardExpanded(
         modifier = Modifier
             .fillMaxWidth()
             .then(if (!device.isLive) Modifier.alpha(0.7f) else Modifier),
-        shape = RoundedCornerShape(12.dp),
-        tonalElevation = 4.dp,
+        shape = RoundedCornerShape(20.dp),
+        color = MaterialTheme.colorScheme.surfaceContainerHighest,
     ) {
         Column(
             modifier = Modifier
